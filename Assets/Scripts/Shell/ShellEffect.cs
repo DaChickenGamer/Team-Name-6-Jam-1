@@ -3,5 +3,5 @@ using UnityEngine;
 
 public abstract class ShellEffect : ScriptableObject
 {
-    public abstract void Trigger();
+    public abstract void Trigger(Transform source = null);
 }

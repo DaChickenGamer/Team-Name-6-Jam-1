@@ -42,7 +42,7 @@ public class PlayerShell : MonoBehaviour
 
         if (_currentShell.onEquipEffects.Count > 0){
             foreach (ShellEffect effect in _currentShell.onEquipEffects)
-                effect.Trigger();
+                effect.Trigger(transform.parent.transform);
         }
         
         transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
@@ -55,7 +55,8 @@ public class PlayerShell : MonoBehaviour
         if (_currentShell.onUnequipEffects.Count <= 0) return;
         
         foreach(ShellEffect effect in _currentShell.onUnequipEffects)
-            effect.Trigger();
+            if(effect)
+                effect.Trigger(transform.parent.transform);
         
         // Put it on floor here
         isEquipped = false;
@@ -90,7 +91,7 @@ public class PlayerShell : MonoBehaviour
             foreach (ShellEffect effect in _currentShell.onHitEffects)
             {
                 if(effect)
-                    effect.Trigger();
+                    effect.Trigger(transform.parent.transform);
             }
         }
 
@@ -106,7 +107,19 @@ public class PlayerShell : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(isThrowing)
+        // Move Effects should probably be a subset that also gets the shell movement info given to it and than returns a position rather than it setting the position in the script
+
+        if (!isThrowing) return;
+        
+        if(!_currentShell.moveEffect)
             transform.position = Vector2.MoveTowards(transform.position, transform.position + new Vector3(throwDir.x, throwDir.y, 0), 10 * Time.deltaTime);
+        else
+            transform.position = _currentShell.moveEffect.TriggerMove(transform);
+        
+    }
+
+    public Vector2 GetThrowDir()
+    {
+        return throwDir;
     }
 }

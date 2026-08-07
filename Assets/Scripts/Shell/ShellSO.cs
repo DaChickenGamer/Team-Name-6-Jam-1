@@ -8,4 +8,6 @@ public class ShellSO : ScriptableObject
     
     public List<ShellEffect> onEquipEffects = new();
     public List<ShellEffect> onUnequipEffects = new();
+
+    public ShellMoveEffect moveEffect;
 }

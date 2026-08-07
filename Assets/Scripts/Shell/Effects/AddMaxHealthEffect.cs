@@ -6,15 +6,11 @@ public class AddMaxHealthEffect : ShellEffect
 {
     public int amountToAdd;
     
-    public override void Trigger()
+    public override void Trigger(Transform source = null)
     {
-        // Very inefficent but it's a game jam
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        var player = source != null && source.CompareTag("Player") ? source.gameObject : GameObject.FindGameObjectWithTag("Player");
         
-        if (player)
-        {
-            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
-            playerHealth.AddMaxHealth(amountToAdd);
-        }
+        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+        playerHealth.AddMaxHealth(amountToAdd);
     }
 }
