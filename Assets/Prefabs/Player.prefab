@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShell
   startingShell: {fileID: 11400000, guid: f55c9f5c2b6f25544b33bd0267fd5279, type: 2}
+  animator: {fileID: 6541828815969869035}
 --- !u!61 &3417134637673564183
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -347,7 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 5
-  animator: {fileID: 0}
+  animator: {fileID: 6541828815969869035}
 --- !u!114 &6731501905403585556
 MonoBehaviour:
   m_ObjectHideFlags: 0

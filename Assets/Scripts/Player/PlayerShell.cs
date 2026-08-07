@@ -7,12 +7,16 @@ using Vector3 = UnityEngine.Vector3;
 
 public class PlayerShell : MonoBehaviour
 {
+    private static readonly int Coconut = Animator.StringToHash("coconut");
+    private static readonly int Throw = Animator.StringToHash("throw");
     public ShellSO startingShell;
     
     private ShellSO _currentShell;
 
     private Vector2 throwDir;
 
+    public Animator animator;
+    
     private bool isEquipped = true;
     private bool isThrowing = false;
 
@@ -47,18 +51,21 @@ public class PlayerShell : MonoBehaviour
         
         transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
 
+        animator.SetBool(Coconut, true);
         isEquipped = true;
     }
     
     public void UnequipShell()
     {
-        if (_currentShell.onUnequipEffects.Count <= 0) return;
-        
-        foreach(ShellEffect effect in _currentShell.onUnequipEffects)
-            if(effect)
-                effect.Trigger(transform.parent.transform);
-        
+        if (_currentShell.onUnequipEffects.Count > 0)
+        {
+            foreach (ShellEffect effect in _currentShell.onUnequipEffects)
+                if (effect)
+                    effect.Trigger(transform.parent.transform);
+        }
+
         // Put it on floor here
+        animator.SetBool(Coconut, false);
         isEquipped = false;
     }
 
@@ -74,6 +81,8 @@ public class PlayerShell : MonoBehaviour
         transform.parent = null;
         throwDir = dir;
         isThrowing = true;
+        
+        animator.SetTrigger(Throw);
         UnequipShell();
     }
 
