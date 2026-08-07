@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 275952905135805026}
   - component: {fileID: 3299628389784196750}
   m_Layer: 0
-  m_Name: Enemy1
+  m_Name: Enemy2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,10 +181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
-  m_Graph: {fileID: -2310827875406449359, guid: fbad95c97c91f8f47988c7f70b9429b8, type: 2}
+  m_Graph: {fileID: -2310827875406449359, guid: 5e54276b1c7797d49af24b22414579c9, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 2398933316948459937
-  m_OriginalGraph: {fileID: -2310827875406449359, guid: fbad95c97c91f8f47988c7f70b9429b8, type: 2}
+  m_OriginalGraph: {fileID: -2310827875406449359, guid: 5e54276b1c7797d49af24b22414579c9, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
