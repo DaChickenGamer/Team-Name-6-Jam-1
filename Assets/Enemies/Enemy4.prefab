@@ -181,10 +181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
-  m_Graph: {fileID: -2310827875406449359, guid: 5e54276b1c7797d49af24b22414579c9, type: 2}
+  m_Graph: {fileID: -2310827875406449359, guid: 869c51793dd87244b95bf0b9b7eef143, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 2398933316948459937
-  m_OriginalGraph: {fileID: -2310827875406449359, guid: 5e54276b1c7797d49af24b22414579c9, type: 2}
+  m_OriginalGraph: {fileID: -2310827875406449359, guid: 869c51793dd87244b95bf0b9b7eef143, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
   references:

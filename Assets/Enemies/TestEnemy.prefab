@@ -181,10 +181,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
-  m_Graph: {fileID: -2310827875406449359, guid: fbad95c97c91f8f47988c7f70b9429b8, type: 2}
+  m_Graph: {fileID: -2310827875406449359, guid: 9ba1c28ddbc685748bc47db3d643ee3b, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 2398933316948459937
-  m_OriginalGraph: {fileID: -2310827875406449359, guid: fbad95c97c91f8f47988c7f70b9429b8, type: 2}
+  - rid: 2398933338494599937
+  m_OriginalGraph: {fileID: -2310827875406449359, guid: 9ba1c28ddbc685748bc47db3d643ee3b, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
@@ -198,6 +199,14 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 1085167244088843550}
+    - rid: 2398933338494599937
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 10163331820703912404
+          m_Value1: 17159252406237313696
+        Name: IsStunned
+        m_Value: 0
 --- !u!114 &3299628389784196750
 MonoBehaviour:
   m_ObjectHideFlags: 0
