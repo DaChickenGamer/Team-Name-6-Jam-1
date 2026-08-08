@@ -3,11 +3,13 @@ using UnityEngine;
 public class EnemyCollision : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public int contactDamage = 1;
     void OrEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
         {
-            // hurt player
+            PlayerHealth healthScript = other.GetComponentInParent<PlayerHealth>();
+            healthScript.RemoveHealth(contactDamage);
         }
         // add in enemy get hurt collision here
     }

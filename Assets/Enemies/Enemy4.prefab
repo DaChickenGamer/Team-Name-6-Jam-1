@@ -211,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85213d6876e9b54999373862663fe34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCollision
+  contactDamage: 1
 --- !u!114 &-8502866571891043295
 MonoBehaviour:
   m_ObjectHideFlags: 0

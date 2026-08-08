@@ -6,7 +6,9 @@ public class ProjectileCollision : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            // hurt player
+            PlayerHealth healthScript = other.GetComponentInParent<PlayerHealth>();
+            ProjectileProperties projProps = GetComponentInChildren<ProjectileProperties>();
+            healthScript.RemoveHealth(projProps.damage);
             Destroy(gameObject);
         }
         /*if(other.CompareTag("Obstacle"))
