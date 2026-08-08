@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cea6f7bf-fd03-4ffe-b69b-c4f5355081db" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shell/ShellEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shell/ShellMovementEffect.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000070607682838" />
+      <entry key="S60" value="1.0037606769649163" />
+      <entry key="M2" value="1.097294919735031" />
+      <entry key="M5" value="3.0833363337046817" />
+      <entry key="M10" value="10.04335829903469" />
+      <entry key="M15" value="16.311082487660094" />
+      <entry key="M30" value="27.827360691226556" />
+      <entry key="H1" value="37.93885061407058" />
+      <entry key="H2" value="54.52519008501138" />
+      <entry key="H4" value="110.18646476827472" />
+      <entry key="D1" value="540.9899635409164" />
+      <entry key="W1" value="853.2338688938312" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="2.0557152967686986E-5" />
+      <entry key="MS500" value="0.11632514865898613" />
+      <entry key="S2" value="0.7523132291550592" />
+      <entry key="S5" value="1.2973377967836424" />
+      <entry key="S10" value="1.5987519266333128" />
+      <entry key="S30" value="1.8530475109482585" />
+      <entry key="S60" value="1.9384304249246764" />
+      <entry key="M2" value="2.2925223503585044" />
+      <entry key="M5" value="4.6388682879116905" />
+      <entry key="M10" value="8.280573977075328" />
+      <entry key="M15" value="10.788579866460415" />
+      <entry key="M30" value="14.695149755102593" />
+      <entry key="H1" value="17.57705648522149" />
+      <entry key="H2" value="22.592318510925896" />
+      <entry key="H4" value="41.53291934940928" />
+      <entry key="D1" value="189.7054593085736" />
+      <entry key="W1" value="294.7099809604931" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="3.11172028277666E-4" />
+      <entry key="MS500" value="0.20178418336476428" />
+      <entry key="S2" value="1.0233756187259424" />
+      <entry key="S5" value="1.843962735621594" />
+      <entry key="S10" value="2.3295530039846835" />
+      <entry key="S30" value="2.7516806757293257" />
+      <entry key="S60" value="2.8897756252221356" />
+      <entry key="M2" value="3.361863218817634" />
+      <entry key="M5" value="7.704530677860262" />
+      <entry key="M10" value="18.306262195439214" />
+      <entry key="M15" value="27.08279066073887" />
+      <entry key="M30" value="42.50954434969671" />
+      <entry key="H1" value="55.507527946178186" />
+      <entry key="H2" value="77.11168120173235" />
+      <entry key="H4" value="151.71358600800033" />
+      <entry key="D1" value="730.6910832225144" />
+      <entry key="W1" value="1147.9429033029558" />
+    </decayedShown>
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "develop",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.5.6f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\Users\coding\Documents\Game Dev\Unity\Team-Name-6-Practice&quot; -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\coding\Documents\Game Dev\Unity\Team-Name-6-Practice" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.5.6f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\coding\Documents\Game Dev\Unity\Team-Name-6-Practice&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\coding\Documents\Game Dev\Unity\Team-Name-6-Practice" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+</project>
