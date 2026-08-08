@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -7,12 +8,16 @@ using Vector3 = UnityEngine.Vector3;
 
 public class PlayerShell : MonoBehaviour
 {
+    private static readonly int Coconut = Animator.StringToHash("coconut");
+    private static readonly int Throw = Animator.StringToHash("throw");
     public ShellSO startingShell;
-    
     private ShellSO _currentShell;
 
     private Vector2 throwDir;
 
+    public Animator animator;
+    public SpriteRenderer shellSpriteRenderer;
+    
     private bool isEquipped = true;
     private bool isThrowing = false;
 
@@ -47,18 +52,30 @@ public class PlayerShell : MonoBehaviour
         
         transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
 
+        animator.SetBool(Coconut, true);
         isEquipped = true;
+        shellSpriteRenderer.enabled = false;
     }
     
     public void UnequipShell()
     {
-        if (_currentShell.onUnequipEffects.Count <= 0) return;
+        if (_currentShell.onUnequipEffects.Count > 0)
+        {
+            foreach (ShellEffect effect in _currentShell.onUnequipEffects)
+                if (effect)
+                    effect.Trigger(transform.parent.transform);
+        }
+        StartCoroutine(HideShell());
+            
+    }
+    
+    IEnumerator HideShell()
+    {
         
-        foreach(ShellEffect effect in _currentShell.onUnequipEffects)
-            if(effect)
-                effect.Trigger(transform.parent.transform);
+        yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Throw"));
         
-        // Put it on floor here
+        animator.SetBool(Coconut, false);
+        shellSpriteRenderer.enabled = true;
         isEquipped = false;
     }
 
@@ -74,6 +91,8 @@ public class PlayerShell : MonoBehaviour
         transform.parent = null;
         throwDir = dir;
         isThrowing = true;
+        
+        animator.SetTrigger(Throw);
         UnequipShell();
     }
 
