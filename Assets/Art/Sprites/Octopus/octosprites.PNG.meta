@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: 4dff4ea01d515564e8656a80e74270e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9063770564199200420
+    second: octosprites_0
+  - first:
+      213: 2048108366021768953
+    second: octosprites_1
+  - first:
+      213: -5369773715832995836
+    second: octosprites_2
+  - first:
+      213: -7750575115071678778
+    second: octosprites_3
+  - first:
+      213: 172042834985876662
+    second: octosprites_4
+  - first:
+      213: -8822926627612860725
+    second: octosprites_5
+  - first:
+      213: 9219908311441136598
+    second: octosprites_6
+  - first:
+      213: 6484252701913103130
+    second: octosprites_7
+  - first:
+      213: 5239047614134491967
+    second: octosprites_8
+  - first:
+      213: 9075058194467198088
+    second: octosprites_9
+  - first:
+      213: 8987398435280751631
+    second: octosprites_10
+  - first:
+      213: 7114413832521761424
+    second: octosprites_11
+  - first:
+      213: 1933321628607083804
+    second: octosprites_12
+  - first:
+      213: 8560278567555600574
+    second: octosprites_13
+  - first:
+      213: 8924883912713958106
+    second: octosprites_14
+  - first:
+      213: -8663540084271046010
+    second: octosprites_15
+  - first:
+      213: -7434527604020380360
+    second: octosprites_16
+  - first:
+      213: 2088954506171434821
+    second: octosprites_17
+  - first:
+      213: -4437751244985185132
+    second: octosprites_18
+  - first:
+      213: -4061916598206953848
+    second: octosprites_19
+  - first:
+      213: -9184288698456802170
+    second: octosprites_20
+  - first:
+      213: 6892437320579437435
+    second: octosprites_21
+  - first:
+      213: -2050265396578440600
+    second: octosprites_22
+  - first:
+      213: 5182540582217513579
+    second: octosprites_23
+  - first:
+      213: 8971140352638283234
+    second: octosprites_24
+  - first:
+      213: -1833357882840712988
+    second: octosprites_25
+  - first:
+      213: -8089258674421047395
+    second: octosprites_26
+  - first:
+      213: -8411574338828593914
+    second: octosprites_27
+  - first:
+      213: 8078528275554977651
+    second: octosprites_28
+  - first:
+      213: 1047891942583219130
+    second: octosprites_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: octosprites_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 2760
+        width: 216
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a63cb46e4bf8cd70800000000000000
+      internalID: 9063770564199200420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_1
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 2761
+        width: 214
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f6bb3225b75c6c10800000000000000
+      internalID: 2048108366021768953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_2
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 2763
+        width: 209
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4008b87714bba75b0800000000000000
+      internalID: -5369773715832995836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_3
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 2765
+        width: 206
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c69b254ffc607490800000000000000
+      internalID: -7750575115071678778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_4
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2378
+        width: 230
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bcfb710c08336200800000000000000
+      internalID: 172042834985876662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_5
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 2376
+        width: 216
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcedcc16afaae8580800000000000000
+      internalID: -8822926627612860725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_6
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 2382
+        width: 207
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dbde1592c1b3ff70800000000000000
+      internalID: 9219908311441136598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_7
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 2369
+        width: 187
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1bb5633a71bcf950800000000000000
+      internalID: 6484252701913103130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_8
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1992
+        width: 224
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b18d12c06d4b840800000000000000
+      internalID: 5239047614134491967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_9
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1993
+        width: 219
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884173d985511fd70800000000000000
+      internalID: 9075058194467198088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_10
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1995
+        width: 215
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c8fc57247a9bc70800000000000000
+      internalID: 8987398435280751631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_11
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1997
+        width: 214
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092c598dfa97bb260800000000000000
+      internalID: 7114413832521761424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1610
+        width: 230
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1574bd27c984da10800000000000000
+      internalID: 1933321628607083804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_13
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1608
+        width: 220
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb09a8db0083cc670800000000000000
+      internalID: 8560278567555600574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_14
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1614
+        width: 215
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2f9eee1ae8bdb70800000000000000
+      internalID: 8924883912713958106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_15
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1601
+        width: 241
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682aaabd13ce4c780800000000000000
+      internalID: -8663540084271046010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_16
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1222
+        width: 249
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d7781b88043d890800000000000000
+      internalID: -7434527604020380360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_17
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1221
+        width: 233
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547cc4c3e057dfc10800000000000000
+      internalID: 2088954506171434821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_18
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1229
+        width: 214
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c4c1141c0f962c0800000000000000
+      internalID: -4437751244985185132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_19
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1235
+        width: 207
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8868c98ff5c21a7c0800000000000000
+      internalID: -4061916598206953848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_20
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 772
+        width: 209
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68cf8d5d61ada8080800000000000000
+      internalID: -9184288698456802170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_21
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 782
+        width: 259
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7358c1b93bd6af50800000000000000
+      internalID: 6892437320579437435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_22
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 828
+        width: 226
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86aaaad0c7efb83e0800000000000000
+      internalID: -2050265396578440600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_23
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 829
+        width: 242
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6afe1583351ce740800000000000000
+      internalID: 5182540582217513579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_24
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 446
+        width: 215
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed6d2d9e94ef7c70800000000000000
+      internalID: 8971140352638283234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_25
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 456
+        width: 206
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8fd1718ba9e86e0800000000000000
+      internalID: -1833357882840712988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_26
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 446
+        width: 204
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9fd2e6281e2dbf80800000000000000
+      internalID: -8089258674421047395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_27
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 445
+        width: 195
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605945c84b5144b80800000000000000
+      internalID: -8411574338828593914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_28
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 60
+        width: 185
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377476c2aa2bc1070800000000000000
+      internalID: 8078528275554977651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octosprites_29
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 58
+        width: 182
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3baa87b2cda8e00800000000000000
+      internalID: 1047891942583219130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      octosprites_0: 9063770564199200420
+      octosprites_1: 2048108366021768953
+      octosprites_10: 8987398435280751631
+      octosprites_11: 7114413832521761424
+      octosprites_12: 1933321628607083804
+      octosprites_13: 8560278567555600574
+      octosprites_14: 8924883912713958106
+      octosprites_15: -8663540084271046010
+      octosprites_16: -7434527604020380360
+      octosprites_17: 2088954506171434821
+      octosprites_18: -4437751244985185132
+      octosprites_19: -4061916598206953848
+      octosprites_2: -5369773715832995836
+      octosprites_20: -9184288698456802170
+      octosprites_21: 6892437320579437435
+      octosprites_22: -2050265396578440600
+      octosprites_23: 5182540582217513579
+      octosprites_24: 8971140352638283234
+      octosprites_25: -1833357882840712988
+      octosprites_26: -8089258674421047395
+      octosprites_27: -8411574338828593914
+      octosprites_28: 8078528275554977651
+      octosprites_29: 1047891942583219130
+      octosprites_3: -7750575115071678778
+      octosprites_4: 172042834985876662
+      octosprites_5: -8822926627612860725
+      octosprites_6: 9219908311441136598
+      octosprites_7: 6484252701913103130
+      octosprites_8: 5239047614134491967
+      octosprites_9: 9075058194467198088
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
