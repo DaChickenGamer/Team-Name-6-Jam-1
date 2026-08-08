@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public LevelManager LevelManager;
+    
     private static GameManager _instance;
     public static GameManager Instance
     {
@@ -11,10 +13,21 @@ public class GameManager : MonoBehaviour
             {
                 Debug.LogError("GameManager not found");
             }
+            
             return _instance;
         }
     }
 
-    [Header("Sub-Manager References")]
-    public UIManager uiManager;
+    private void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 }
