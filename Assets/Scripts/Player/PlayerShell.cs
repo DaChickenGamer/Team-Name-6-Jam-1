@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,12 +11,12 @@ public class PlayerShell : MonoBehaviour
     private static readonly int Coconut = Animator.StringToHash("coconut");
     private static readonly int Throw = Animator.StringToHash("throw");
     public ShellSO startingShell;
-    
     private ShellSO _currentShell;
 
     private Vector2 throwDir;
 
     public Animator animator;
+    public SpriteRenderer shellSpriteRenderer;
     
     private bool isEquipped = true;
     private bool isThrowing = false;
@@ -53,6 +54,7 @@ public class PlayerShell : MonoBehaviour
 
         animator.SetBool(Coconut, true);
         isEquipped = true;
+        shellSpriteRenderer.enabled = false;
     }
     
     public void UnequipShell()
@@ -63,9 +65,17 @@ public class PlayerShell : MonoBehaviour
                 if (effect)
                     effect.Trigger(transform.parent.transform);
         }
-
-        // Put it on floor here
+        StartCoroutine(HideShell());
+            
+    }
+    
+    IEnumerator HideShell()
+    {
+        
+        yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Throw"));
+        
         animator.SetBool(Coconut, false);
+        shellSpriteRenderer.enabled = true;
         isEquipped = false;
     }
 
