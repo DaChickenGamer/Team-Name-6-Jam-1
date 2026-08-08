@@ -4,7 +4,7 @@ public class EnemyCollision : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int contactDamage = 1;
-    void OrEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
         {
