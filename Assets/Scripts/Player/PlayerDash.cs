@@ -16,6 +16,7 @@ public class PlayerDash : MonoBehaviour
     [SerializeField] float dashDuration = 0.5f;
     [SerializeField] float dashCooldown = 1f;
     [SerializeField] Rigidbody2D rb;
+    [SerializeField] private AudioClip dashSoundClip;
 
     Vector2 moveDirection;
 
@@ -67,7 +68,7 @@ public class PlayerDash : MonoBehaviour
     {
         //Debug.Log("Got Here");
         //Debug.Log(moveDirection);
-        
+        SoundFXManager.instance.PlaySoundFXClip(dashSoundClip, transform, 1f);
         movement.isDashing = true;
         rb.linearVelocity = new Vector2(moveDirection.x * dashSpeed, moveDirection.y * dashSpeed);
         yield return new WaitForSeconds(dashDuration);
