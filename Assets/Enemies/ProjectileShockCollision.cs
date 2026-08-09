@@ -6,7 +6,8 @@ public class ProjectileShockCollision : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            // shock player here
+            PlayerMovement moveScript = other.GetComponent<PlayerMovement>();
+            moveScript.Stun();
             PlayerHealth healthScript = other.GetComponentInParent<PlayerHealth>();
             ProjectileProperties projProps = GetComponentInChildren<ProjectileProperties>();
             healthScript.RemoveHealth(projProps.damage);

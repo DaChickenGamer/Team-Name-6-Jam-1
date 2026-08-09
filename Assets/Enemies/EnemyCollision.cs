@@ -9,7 +9,7 @@ public class EnemyCollision : MonoBehaviour
     private Rigidbody2D rb;
     void Start()
     {
-        if(isBouncy) rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -29,6 +29,10 @@ public class EnemyCollision : MonoBehaviour
         {
             PlayerHealth healthScript = other.GetComponentInParent<PlayerHealth>();
             healthScript.RemoveHealth(contactDamage);
+        }
+        else if(!isBouncy && !other.CompareTag("Projectile") && !other.CompareTag("Enemy"))
+        {
+            rb.linearVelocity *= 0;
         }
     }
 }
