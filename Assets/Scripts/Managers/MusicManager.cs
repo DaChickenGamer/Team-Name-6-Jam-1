@@ -18,7 +18,6 @@ public class MusicManager : MonoBehaviour
         else
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
 
         if (musicSource == null)
@@ -31,7 +30,6 @@ public class MusicManager : MonoBehaviour
         }
 
         musicSource.enabled = true;
-        DontDestroyOnLoad(musicSource);
     }
 
     public void PlayMusic(string trackName, float fadeDuration = 0.5f)
