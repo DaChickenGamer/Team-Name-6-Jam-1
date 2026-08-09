@@ -343,8 +343,9 @@ MonoBehaviour:
   playerHealth: {fileID: 7161639714892229593}
   healthBar: {fileID: 1195249180773020015, guid: adf584ae84ff52446ae2111219841653, type: 3}
   heartContainer: []
-  fullHeart: {fileID: 8545781588704198415, guid: 8e97ae1afa55424468a76d35d5da82d0, type: 3}
-  emptyHeart: {fileID: 4097144792221710411, guid: 1ccad8338168976428bb0ab03dc3110e, type: 3}
+  fullHeart: {fileID: -5185649437945853404, guid: 3f362a2b000d912418b12c7f3a9fdde9, type: 3}
+  emptyHeart: {fileID: -6739221631703133009, guid: 0624b2e484b97134caca717bfb40f9d5, type: 3}
+  lastFilledHeartIndex: 0
 --- !u!114 &8925081242956838385
 MonoBehaviour:
   m_ObjectHideFlags: 0
