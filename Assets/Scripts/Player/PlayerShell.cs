@@ -8,7 +8,7 @@ using Vector3 = UnityEngine.Vector3;
 
 public class PlayerShell : MonoBehaviour
 {
-    private static readonly int Coconut = Animator.StringToHash("coconut");
+    private static readonly int Costume = Animator.StringToHash("costume");
     private static readonly int Throw = Animator.StringToHash("throw");
     public ShellSO startingShell;
     private ShellSO _currentShell;
@@ -20,6 +20,9 @@ public class PlayerShell : MonoBehaviour
     
     public bool isEquipped = true;
     private bool isThrowing = false;
+
+    public Action<ShellSO> EquipShellEvent;
+    public Action UnequipShellEvent;
 
     [SerializeField] AudioClip equipSoundClip;
 
@@ -54,7 +57,7 @@ public class PlayerShell : MonoBehaviour
         SoundFXManager.Instance.PlaySoundFXClip(equipSoundClip, transform, 1f);
         transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
 
-        animator.SetBool(Coconut, true);
+        EquipShellEvent?.Invoke(_currentShell);
         isEquipped = true;
         shellSpriteRenderer.enabled = false;
     }
@@ -68,15 +71,15 @@ public class PlayerShell : MonoBehaviour
                     effect.Trigger(transform.parent.transform);
         }
         StartCoroutine(HideShell());
-            
     }
     
     IEnumerator HideShell()
     {
-        
         yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Throw"));
-        
-        animator.SetBool(Coconut, false);
+        yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName("Throw"));
+
+        UnequipShellEvent?.Invoke();
+        shellSpriteRenderer.sprite = _currentShell.shellSprite;
         shellSpriteRenderer.enabled = true;
         isEquipped = false;
     }
