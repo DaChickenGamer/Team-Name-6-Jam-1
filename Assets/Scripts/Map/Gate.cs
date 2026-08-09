@@ -40,6 +40,8 @@ public class Gate : MonoBehaviour, IRoomTrigger
 
     public void OnEnterRoom(Room room)
     {
+        if (room.GetRoomCleared()) return;
+        
         LockGate();
         room.AllEnemiesDead += UnlockGate;
     }
