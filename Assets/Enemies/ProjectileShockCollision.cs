@@ -6,15 +6,17 @@ public class ProjectileShockCollision : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            // shock player
+            PlayerMovement moveScript = other.GetComponent<PlayerMovement>();
+            moveScript.Stun();
             PlayerHealth healthScript = other.GetComponentInParent<PlayerHealth>();
-            healthScript.RemoveHealth(1);
+            ProjectileProperties projProps = GetComponentInChildren<ProjectileProperties>();
+            healthScript.RemoveHealth(projProps.damage);
             Destroy(gameObject);
         }
-        /*if(other.CompareTag("Obstacle"))
+        if(!other.CompareTag("Projectile") && !other.CompareTag("Enemy"))
         {
             Destroy(gameObject);
-        }*/
+        }
     }
 
 }

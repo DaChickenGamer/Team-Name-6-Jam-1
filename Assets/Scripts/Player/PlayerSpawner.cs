@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerSpawner : MonoBehaviour
@@ -15,5 +16,11 @@ public class PlayerSpawner : MonoBehaviour
     {
         playerToUse.transform.position = transform.position;
         playerToUse.transform.rotation = transform.rotation;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position, Vector3.one);
     }
 }

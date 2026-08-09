@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,28 +13,43 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
 
     public bool isDashing;
+    public float stunDuration = 2;
+    private float stunTimer = 0;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>(); 
     }
     public void OnMovement(InputAction.CallbackContext ctxt)
     {
-        direction = ctxt.ReadValue<Vector2>();
+        if(stunTimer <= 0) {
+            direction = ctxt.ReadValue<Vector2>();
         
-        if (direction.x != 0 || direction.y != 0)
-        {
-            animator.transform.localScale = direction.x switch
+            if (direction.x != 0 || direction.y != 0)
             {
-                > 0 => new Vector3(-1, 1, 1),
-                < 0 => new Vector3(1, 1, 1),
-                _ => animator.transform.localScale
-            };
+                animator.transform.localScale = direction.x switch
+                {
+                    > 0 => new Vector3(-1, 1, 1),
+                    < 0 => new Vector3(1, 1, 1),
+                    _ => animator.transform.localScale
+                };
 
-            animator.SetBool(IsWalking, true);
+                animator.SetBool(IsWalking, true);
+            }
+            else
+            {
+                animator.SetBool(IsWalking, false);
+            }
         }
-        else
+    }
+    public void Stun()
+    {
+        stunTimer = stunDuration;
+    }
+    void Update()
+    {
+        if(stunTimer >= 0)
         {
-            animator.SetBool(IsWalking, false);
+            stunTimer -= Time.deltaTime;
         }
     }
     private void FixedUpdate()

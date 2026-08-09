@@ -11,9 +11,9 @@ public class ProjectileCollision : MonoBehaviour
             healthScript.RemoveHealth(projProps.damage);
             Destroy(gameObject);
         }
-        /*if(other.CompareTag("Obstacle"))
+        if(!other.CompareTag("Projectile") && !other.CompareTag("Enemy"))
         {
             Destroy(gameObject);
-        }*/
+        }
     }
 }
