@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 6630603367609240598}
   - component: {fileID: 5994189584340323985}
   - component: {fileID: 8925081242956838385}
+  - component: {fileID: 9081031723205988813}
   m_Layer: 0
   m_Name: Player Health
   m_TagString: Untagged
@@ -342,6 +343,9 @@ MonoBehaviour:
   playerHealth: {fileID: 7161639714892229593}
   healthBar: {fileID: 1195249180773020015, guid: adf584ae84ff52446ae2111219841653, type: 3}
   heartContainer: []
+  fullHeart: {fileID: -5185649437945853404, guid: 3f362a2b000d912418b12c7f3a9fdde9, type: 3}
+  emptyHeart: {fileID: -6739221631703133009, guid: 0624b2e484b97134caca717bfb40f9d5, type: 3}
+  lastFilledHeartIndex: 0
 --- !u!114 &8925081242956838385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,6 +372,20 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &9081031723205988813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7111673995791530359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c06f522f6d02b458e2f19cca93bf21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpdateHealthUI
+  playerHealth: {fileID: 7161639714892229593}
+  healthUI: {fileID: 5994189584340323985}
 --- !u!1 &7995939357433560264
 GameObject:
   m_ObjectHideFlags: 0

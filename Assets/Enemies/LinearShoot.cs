@@ -15,7 +15,7 @@ public class LinearShoot : MonoBehaviour
     void Update()
     {
         t += Time.deltaTime;
-        if(t > 20f)
+        if(t > 10f)
         {
             Destroy(gameObject);
         }
