@@ -14,10 +14,11 @@ GameObject:
   - component: {fileID: 1022582606852190684}
   - component: {fileID: 275952905135805026}
   - component: {fileID: 3299628389784196750}
-  - component: {fileID: 6098988388779698569}
-  - component: {fileID: 6047871604379275636}
+  - component: {fileID: 3868612784293449789}
+  - component: {fileID: 444913837767599968}
+  - component: {fileID: 4683909992702135793}
   m_Layer: 0
-  m_Name: Nudibranch
+  m_Name: Shrimp
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6971247544712760811, guid: 1193760e3955d0f46bc337b5108531a0, type: 3}
+  m_Sprite: {fileID: -5335610607407949400, guid: 1ea70788127fffe49b34197378a5ec91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -136,7 +137,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.05, y: 1.76}
+    oldSize: {x: 2.19, y: 1.79}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -183,10 +184,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
-  m_Graph: {fileID: -2310827875406449359, guid: 5e54276b1c7797d49af24b22414579c9, type: 2}
+  m_Graph: {fileID: -2310827875406449359, guid: fbad95c97c91f8f47988c7f70b9429b8, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 2398933316948459937
-  m_OriginalGraph: {fileID: -2310827875406449359, guid: 5e54276b1c7797d49af24b22414579c9, type: 2}
+  m_OriginalGraph: {fileID: -2310827875406449359, guid: fbad95c97c91f8f47988c7f70b9429b8, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
   references:
@@ -214,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCollision
   contactDamage: 1
   isBouncy: 0
---- !u!114 &6098988388779698569
+--- !u!114 &3868612784293449789
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -227,7 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStun
   isStunned: 0
---- !u!114 &6047871604379275636
+--- !u!114 &444913837767599968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -240,3 +241,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 1
+--- !u!95 &4683909992702135793
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085167244088843550}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: af8d34529c319a94693ebd8de1147849, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

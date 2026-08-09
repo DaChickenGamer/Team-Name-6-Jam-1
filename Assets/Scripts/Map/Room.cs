@@ -21,11 +21,14 @@ public class Room : MonoBehaviour
         }
 
         _roomTriggers = transform.GetComponentsInChildren<IRoomTrigger>();
+
         
         foreach (IRoomTrigger t in _roomTriggers)
         {
             OnEnterRoom += t.OnEnterRoom;
         }
+
+        OnEnterRoom += (Room) => print(name);
     }
 
     public void IncreaseEnemiesAlive()
