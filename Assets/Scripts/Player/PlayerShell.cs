@@ -115,7 +115,13 @@ public class PlayerShell : MonoBehaviour
         }
 
         // TODO: Make a more well defined way of stopping a throw later
-        if (isThrowing && !other.CompareTag("Player"))
+        if(isThrowing && other.CompareTag("Enemy"))
+        {
+            isThrowing = false;
+            EnemyHealth enemyHealth = other.GetComponentInParent<EnemyHealth>();
+            enemyHealth.RemoveHealth(1); // needs to account for glass shell
+        }
+        else if (isThrowing && !other.CompareTag("Player") && !other.CompareTag("Projectile"))
         {
             isThrowing = false;
         }

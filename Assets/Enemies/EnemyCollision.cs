@@ -11,6 +11,5 @@ public class EnemyCollision : MonoBehaviour
             PlayerHealth healthScript = other.GetComponentInParent<PlayerHealth>();
             healthScript.RemoveHealth(contactDamage);
         }
-        // add in enemy get hurt collision here
     }
 }

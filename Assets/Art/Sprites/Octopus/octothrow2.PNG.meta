@@ -1,0 +1,1560 @@
+fileFormatVersion: 2
+guid: c261be4b1db4a8a4ab61f1e12774f6fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5918822078082637837
+    second: octothrow2_0
+  - first:
+      213: -8808573368181868219
+    second: octothrow2_1
+  - first:
+      213: 2523106654166200953
+    second: octothrow2_2
+  - first:
+      213: -848231006900620166
+    second: octothrow2_3
+  - first:
+      213: -1808681731859093761
+    second: octothrow2_4
+  - first:
+      213: -5130927018067103038
+    second: octothrow2_5
+  - first:
+      213: 2149032626876905879
+    second: octothrow2_6
+  - first:
+      213: 8807665377960354019
+    second: octothrow2_7
+  - first:
+      213: -9002283973881625439
+    second: octothrow2_8
+  - first:
+      213: 7800375839092247254
+    second: octothrow2_9
+  - first:
+      213: 4242483803517290763
+    second: octothrow2_10
+  - first:
+      213: 2548953744221931942
+    second: octothrow2_11
+  - first:
+      213: -2420458908264093596
+    second: octothrow2_12
+  - first:
+      213: -6950442963375050604
+    second: octothrow2_13
+  - first:
+      213: -8370324615469324076
+    second: octothrow2_14
+  - first:
+      213: -7248403852689771114
+    second: octothrow2_15
+  - first:
+      213: 3345510490196626074
+    second: octothrow2_16
+  - first:
+      213: -523899341156201582
+    second: octothrow2_17
+  - first:
+      213: 4720823177807146532
+    second: octothrow2_18
+  - first:
+      213: -9071147886001417773
+    second: octothrow2_19
+  - first:
+      213: 7241524179822018161
+    second: octothrow2_20
+  - first:
+      213: 2268544882165598829
+    second: octothrow2_21
+  - first:
+      213: -3572757695863343811
+    second: octothrow2_22
+  - first:
+      213: -7623048227155249475
+    second: octothrow2_23
+  - first:
+      213: 8193775174398847467
+    second: octothrow2_24
+  - first:
+      213: -3204175560572101868
+    second: octothrow2_25
+  - first:
+      213: 7071904739357941615
+    second: octothrow2_26
+  - first:
+      213: -2055164895115807209
+    second: octothrow2_27
+  - first:
+      213: 6136108128208545662
+    second: octothrow2_28
+  - first:
+      213: 694826728757746537
+    second: octothrow2_29
+  - first:
+      213: -8207290632369337900
+    second: octothrow2_30
+  - first:
+      213: -2253171643744084921
+    second: octothrow2_31
+  - first:
+      213: 8190553220539949382
+    second: octothrow2_32
+  - first:
+      213: 3754292898759368398
+    second: octothrow2_33
+  - first:
+      213: 4882052138596719743
+    second: octothrow2_34
+  - first:
+      213: 5253672228162422002
+    second: octothrow2_35
+  - first:
+      213: 4081360321748513163
+    second: octothrow2_36
+  - first:
+      213: 3687145922920111581
+    second: octothrow2_37
+  - first:
+      213: 8512143469956621235
+    second: octothrow2_38
+  - first:
+      213: 8804903415928712283
+    second: octothrow2_39
+  - first:
+      213: -8364920272885800839
+    second: octothrow2_40
+  - first:
+      213: 8040651710231392792
+    second: octothrow2_41
+  - first:
+      213: -6797981476905243688
+    second: octothrow2_42
+  - first:
+      213: -4041491321657308742
+    second: octothrow2_43
+  - first:
+      213: -5359536182255078023
+    second: octothrow2_44
+  - first:
+      213: -3373110129700707971
+    second: octothrow2_45
+  - first:
+      213: -3163650875953404276
+    second: octothrow2_46
+  - first:
+      213: 390482732817117460
+    second: octothrow2_47
+  - first:
+      213: 1210451792399394752
+    second: octothrow2_48
+  - first:
+      213: -8610643116402094370
+    second: octothrow2_49
+  - first:
+      213: 482696054242929880
+    second: octothrow2_50
+  - first:
+      213: 5808169216172998447
+    second: octothrow2_51
+  - first:
+      213: -3322550724462186795
+    second: octothrow2_52
+  - first:
+      213: -7995767972744525469
+    second: octothrow2_53
+  - first:
+      213: 6455634351905463113
+    second: octothrow2_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: octothrow2_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1982
+        width: 205
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00eadc1251e32250800000000000000
+      internalID: 5918822078082637837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_1
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1981
+        width: 222
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 549bd830139a1c580800000000000000
+      internalID: -8808573368181868219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_2
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1980
+        width: 246
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972300c4220e30320800000000000000
+      internalID: 2523106654166200953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1946
+        width: 262
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a747732b46a7a34f0800000000000000
+      internalID: -848231006900620166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_4
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 1924
+        width: 209
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6ecc43c8546e6e0800000000000000
+      internalID: -1808681731859093761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_5
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 1978
+        width: 199
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c2f7a7df094bc8b0800000000000000
+      internalID: -5130927018067103038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_6
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 1980
+        width: 201
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 799f8bfb9c5e2dd10800000000000000
+      internalID: 2149032626876905879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_7
+      rect:
+        serializedVersion: 2
+        x: 2779
+        y: 1981
+        width: 202
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e065d90ffc1b3a70800000000000000
+      internalID: 8807665377960354019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_8
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 1982
+        width: 205
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a408910c66711380800000000000000
+      internalID: -9002283973881625439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_9
+      rect:
+        serializedVersion: 2
+        x: 3545
+        y: 1992
+        width: 206
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da02ab5f70804c60800000000000000
+      internalID: 7800375839092247254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_10
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1598
+        width: 206
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b090ff9aa8450ea30800000000000000
+      internalID: 4242483803517290763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_11
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1597
+        width: 224
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a90049ece3bf5320800000000000000
+      internalID: 2548953744221931942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_12
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1596
+        width: 230
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4682d73727dc86ed0800000000000000
+      internalID: -2420458908264093596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1562
+        width: 262
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490ba6823f01b8f90800000000000000
+      internalID: -6950442963375050604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_14
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 1540
+        width: 209
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d82e303c12a6db80800000000000000
+      internalID: -8370324615469324076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_15
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 1598
+        width: 205
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6957ad3891f786b90800000000000000
+      internalID: -7248403852689771114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_16
+      rect:
+        serializedVersion: 2
+        x: 2367
+        y: 1597
+        width: 223
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a4388c014ad6e20800000000000000
+      internalID: 3345510490196626074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_17
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 1596
+        width: 230
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29bc250335cbab8f0800000000000000
+      internalID: -523899341156201582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_18
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 1562
+        width: 262
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e20a01babb38140800000000000000
+      internalID: 4720823177807146532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_19
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 1540
+        width: 209
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d199d50f0fcc1280800000000000000
+      internalID: -9071147886001417773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_20
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1214
+        width: 205
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e71b2dfdf0f7460800000000000000
+      internalID: 7241524179822018161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_21
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1213
+        width: 223
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ac2821d8d7b7f10800000000000000
+      internalID: 2268544882165598829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_22
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1212
+        width: 230
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35b58d0ec30b6ec0800000000000000
+      internalID: -3572757695863343811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_23
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1178
+        width: 262
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db67dbaa60e753690800000000000000
+      internalID: -7623048227155249475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_24
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 1156
+        width: 209
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be9257fcb1326b170800000000000000
+      internalID: 8193775174398847467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_25
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 1214
+        width: 223
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b9c1add4b7883d0800000000000000
+      internalID: -3204175560572101868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_26
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 1213
+        width: 220
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fd4d254e3742260800000000000000
+      internalID: 7071904739357941615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_27
+      rect:
+        serializedVersion: 2
+        x: 2724
+        y: 1212
+        width: 241
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 716f4c7aa669a73e0800000000000000
+      internalID: -2055164895115807209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_28
+      rect:
+        serializedVersion: 2
+        x: 3132
+        y: 1175
+        width: 250
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77e14505d5d72550800000000000000
+      internalID: 6136108128208545662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_29
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 1156
+        width: 209
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b5d0c7a3584a900800000000000000
+      internalID: 694826728757746537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_30
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 830
+        width: 224
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d90c3967a8d91e80800000000000000
+      internalID: -8207290632369337900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 829
+        width: 222
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c96ace3502bb0e0800000000000000
+      internalID: -2253171643744084921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_32
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 828
+        width: 261
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641273832c0baa170800000000000000
+      internalID: 8190553220539949382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_33
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 768
+        width: 262
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eced255108de91430800000000000000
+      internalID: 3754292898759368398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_34
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 772
+        width: 209
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c5ef7cd8880c340800000000000000
+      internalID: 4882052138596719743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_35
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 830
+        width: 210
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4c4fd6e0bc8e840800000000000000
+      internalID: 5253672228162422002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_36
+      rect:
+        serializedVersion: 2
+        x: 2364
+        y: 829
+        width: 226
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81b132b697e3a830800000000000000
+      internalID: 4081360321748513163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_37
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 828
+        width: 230
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddddeaa7eaf5b2330800000000000000
+      internalID: 3687145922920111581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_38
+      rect:
+        serializedVersion: 2
+        x: 3134
+        y: 791
+        width: 248
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3ecebf265312670800000000000000
+      internalID: 8512143469956621235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_39
+      rect:
+        serializedVersion: 2
+        x: 3564
+        y: 772
+        width: 209
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ced04a10d413a70800000000000000
+      internalID: 8804903415928712283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_40
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 446
+        width: 221
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970ad20c455d9eb80800000000000000
+      internalID: -8364920272885800839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_41
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 445
+        width: 235
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812baf61122269f60800000000000000
+      internalID: 8040651710231392792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_42
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 444
+        width: 230
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dba06f2dd7b8a1a0800000000000000
+      internalID: -6797981476905243688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_43
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 388
+        width: 209
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9cac14e0db9e7c0800000000000000
+      internalID: -4041491321657308742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_44
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 407
+        width: 248
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97535dffc3a1f95b0800000000000000
+      internalID: -5359536182255078023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_45
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 446
+        width: 209
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71eae2653e4031d0800000000000000
+      internalID: -3373110129700707971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_46
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 445
+        width: 240
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c86a1714a447814d0800000000000000
+      internalID: -3163650875953404276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_47
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 444
+        width: 230
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 411fc740af54b6500800000000000000
+      internalID: 390482732817117460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_48
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 395
+        width: 254
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c763bfed736cc010800000000000000
+      internalID: 1210451792399394752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_49
+      rect:
+        serializedVersion: 2
+        x: 3561
+        y: 388
+        width: 212
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edec03fe4b9d08880800000000000000
+      internalID: -8610643116402094370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_50
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 62
+        width: 216
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dce1aff081e2b600800000000000000
+      internalID: 482696054242929880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_51
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 61
+        width: 217
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2fb95d0123ca9050800000000000000
+      internalID: 5808169216172998447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_52
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 60
+        width: 226
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dee63048bde3e1d0800000000000000
+      internalID: -3322550724462186795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_53
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 21
+        width: 255
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3690e166463590190800000000000000
+      internalID: -7995767972744525469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: octothrow2_54
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 4
+        width: 209
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b52295d35079950800000000000000
+      internalID: 6455634351905463113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      octothrow2_0: 5918822078082637837
+      octothrow2_1: -8808573368181868219
+      octothrow2_10: 4242483803517290763
+      octothrow2_11: 2548953744221931942
+      octothrow2_12: -2420458908264093596
+      octothrow2_13: -6950442963375050604
+      octothrow2_14: -8370324615469324076
+      octothrow2_15: -7248403852689771114
+      octothrow2_16: 3345510490196626074
+      octothrow2_17: -523899341156201582
+      octothrow2_18: 4720823177807146532
+      octothrow2_19: -9071147886001417773
+      octothrow2_2: 2523106654166200953
+      octothrow2_20: 7241524179822018161
+      octothrow2_21: 2268544882165598829
+      octothrow2_22: -3572757695863343811
+      octothrow2_23: -7623048227155249475
+      octothrow2_24: 8193775174398847467
+      octothrow2_25: -3204175560572101868
+      octothrow2_26: 7071904739357941615
+      octothrow2_27: -2055164895115807209
+      octothrow2_28: 6136108128208545662
+      octothrow2_29: 694826728757746537
+      octothrow2_3: -848231006900620166
+      octothrow2_30: -8207290632369337900
+      octothrow2_31: -2253171643744084921
+      octothrow2_32: 8190553220539949382
+      octothrow2_33: 3754292898759368398
+      octothrow2_34: 4882052138596719743
+      octothrow2_35: 5253672228162422002
+      octothrow2_36: 4081360321748513163
+      octothrow2_37: 3687145922920111581
+      octothrow2_38: 8512143469956621235
+      octothrow2_39: 8804903415928712283
+      octothrow2_4: -1808681731859093761
+      octothrow2_40: -8364920272885800839
+      octothrow2_41: 8040651710231392792
+      octothrow2_42: -6797981476905243688
+      octothrow2_43: -4041491321657308742
+      octothrow2_44: -5359536182255078023
+      octothrow2_45: -3373110129700707971
+      octothrow2_46: -3163650875953404276
+      octothrow2_47: 390482732817117460
+      octothrow2_48: 1210451792399394752
+      octothrow2_49: -8610643116402094370
+      octothrow2_5: -5130927018067103038
+      octothrow2_50: 482696054242929880
+      octothrow2_51: 5808169216172998447
+      octothrow2_52: -3322550724462186795
+      octothrow2_53: -7995767972744525469
+      octothrow2_54: 6455634351905463113
+      octothrow2_6: 2149032626876905879
+      octothrow2_7: 8807665377960354019
+      octothrow2_8: -9002283973881625439
+      octothrow2_9: 7800375839092247254
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
