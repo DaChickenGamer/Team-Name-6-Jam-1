@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Gate))]
@@ -7,12 +8,14 @@ public class RoomTeleport : MonoBehaviour
     private Gate _gate;
     private Vector3 teleportOffsetAmount;
     private int offset = 2;
+    private GameObject camera;
 
     private void Start()
     {
         _gate = GetComponent<Gate>();
         
         _gate.GateEntered += Teleport;
+        camera = GameObject.FindGameObjectWithTag("MainCamera");
     }
 
     private void Teleport(GameObject player)
@@ -28,5 +31,8 @@ public class RoomTeleport : MonoBehaviour
         };
 
         player.transform.position = _gate.nextGate.transform.position + teleportOffsetAmount;
+
+        Vector3 roomCoords = _gate.nextGate.transform.parent.transform.localPosition;
+        camera.transform.position = new Vector3(roomCoords.x, roomCoords.y, camera.transform.position.z);
     }
 }
