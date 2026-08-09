@@ -12,6 +12,11 @@ public class PlayerHealth : MonoBehaviour
 
     public event Action OnDeath;
     public event Action<int> OnHealthChanged;
+    public event Action<int> OnMaxHealthChanged; 
+    public event Action<int> AddMaxHealthEvent;
+    public event Action<int> AddHealthEvent;
+    public event Action<int> RemoveMaxHealthEvent;
+    public event Action<int> RemoveHealthEvent;
 
     
     private void Start()
@@ -54,6 +59,7 @@ public class PlayerHealth : MonoBehaviour
         }
         
         maxHealth = newAmount;
+        OnMaxHealthChanged?.Invoke(newAmount);
     }
 
     public void ResetHealth()
@@ -62,17 +68,21 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void AddMaxHealth(int amount)
-    {
+    {   
+        
+        AddMaxHealthEvent?.Invoke(amount);
         SetMaxHealth(maxHealth + amount);
     }
 
     public void RemoveMaxHealth(int amount)
     {
+        RemoveMaxHealthEvent?.Invoke(amount);
         SetMaxHealth(maxHealth - amount);
     }
         
     public void AddHealth(int amount)
     {
+        AddHealthEvent?.Invoke(amount);
         if (amount < 0) return;
         SetHealth(currentHealth + amount);
     }
@@ -82,6 +92,7 @@ public class PlayerHealth : MonoBehaviour
         if(iFrameCount <= 0)
         {
             if (amount < 0) return;
+            RemoveHealthEvent?.Invoke(amount);
             SetHealth(currentHealth - amount);
             iFrameCount = iFrameLength;
         }

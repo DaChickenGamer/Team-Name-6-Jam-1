@@ -1,7 +1,8 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum Level
+public enum LevelName
 {
    MainMenu,
    LevelOne,
@@ -11,7 +12,9 @@ public enum Level
 
 public class LevelManager : MonoBehaviour
 {
-   public void LoadLevel(Level level)
+   public List<Level> levels;
+   
+   public void LoadLevel(LevelName level)
    {
       SceneManager.LoadScene((int)level);
    }

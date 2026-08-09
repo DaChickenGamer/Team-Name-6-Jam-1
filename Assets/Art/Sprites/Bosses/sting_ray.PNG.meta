@@ -1,79 +1,67 @@
 fileFormatVersion: 2
-guid: 8a64d9bd40f9f50429b953b986022c2d
+guid: 092222d96fbd1eb409ccbce998d9802c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -429890163646538327
-    second: turtle_0
+      213: -764547066418044734
+    second: sting_ray_0
   - first:
-      213: 6688820631902906034
-    second: turtle_1
+      213: 1939618969428604186
+    second: sting_ray_1
   - first:
-      213: 7521697127347132656
-    second: turtle_2
+      213: 496513176578923132
+    second: sting_ray_2
   - first:
-      213: 231807237200413646
-    second: turtle_3
+      213: 6044542024677230696
+    second: sting_ray_3
   - first:
-      213: -3873956415563203196
-    second: turtle_4
+      213: 7284242290850538440
+    second: sting_ray_4
   - first:
-      213: 8242098078855365452
-    second: turtle_5
+      213: 4873339873800591033
+    second: sting_ray_5
   - first:
-      213: -6330902930413198508
-    second: turtle_6
+      213: -1951980601001502069
+    second: sting_ray_6
   - first:
-      213: 2066510742272872450
-    second: turtle_7
+      213: -2526877761542330507
+    second: sting_ray_7
   - first:
-      213: -7617003907115058534
-    second: turtle_8
+      213: -2031854707446233870
+    second: sting_ray_8
   - first:
-      213: 5545694312671666409
-    second: turtle_9
+      213: 682284935656678628
+    second: sting_ray_9
   - first:
-      213: 7100918178036704810
-    second: turtle_10
+      213: 3979997555977406084
+    second: sting_ray_10
   - first:
-      213: 4510350633099446697
-    second: turtle_11
+      213: 2247822457011075281
+    second: sting_ray_11
   - first:
-      213: 2301856092833202834
-    second: turtle_12
+      213: 6675465653702173264
+    second: sting_ray_12
   - first:
-      213: 2653097499476763588
-    second: turtle_13
+      213: 3351945745159702532
+    second: sting_ray_13
   - first:
-      213: -1031367630772205524
-    second: turtle_14
+      213: 9119973279739740806
+    second: sting_ray_14
   - first:
-      213: -9093222059675111890
-    second: turtle_15
+      213: -6813591120296270336
+    second: sting_ray_15
   - first:
-      213: -8900237695910901213
-    second: turtle_16
+      213: -8648389604053584844
+    second: sting_ray_16
   - first:
-      213: -4121504403395624310
-    second: turtle_17
+      213: -308506919323300052
+    second: sting_ray_17
   - first:
-      213: 1870984041318113413
-    second: turtle_18
+      213: 5091115832593404932
+    second: sting_ray_18
   - first:
-      213: -1802790853537088819
-    second: turtle_19
-  - first:
-      213: -8662325717893569854
-    second: turtle_20
-  - first:
-      213: -8477613912591269555
-    second: turtle_21
-  - first:
-      213: -1488924945733586920
-    second: turtle_22
-  - first:
-      213: -3945624629258765691
-    second: turtle_23
+      213: -6244494293857683390
+    second: sting_ray_19
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -182,13 +170,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: turtle_0
+      name: sting_ray_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1574
-        width: 268
-        height: 295
+        x: 98
+        y: 1034
+        width: 298
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9add96f7c29b80af0800000000000000
-      internalID: -429890163646538327
+      spriteID: 2c0e51c6e78c365f0800000000000000
+      internalID: -764547066418044734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_1
+      name: sting_ray_1
       rect:
         serializedVersion: 2
-        x: 449
-        y: 1571
-        width: 268
-        height: 295
+        x: 625
+        y: 1045
+        width: 288
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b660e20de673dc50800000000000000
-      internalID: 6688820631902906034
+      spriteID: a15b6681d29eaea10800000000000000
+      internalID: 1939618969428604186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_2
+      name: sting_ray_2
       rect:
         serializedVersion: 2
-        x: 834
-        y: 1571
-        width: 268
-        height: 292
+        x: 1140
+        y: 1055
+        width: 282
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f81a978faf626860800000000000000
-      internalID: 7521697127347132656
+      spriteID: c7a994c7a18f3e600800000000000000
+      internalID: 496513176578923132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_3
+      name: sting_ray_3
       rect:
         serializedVersion: 2
-        x: 1217
-        y: 1571
-        width: 268
-        height: 295
+        x: 1651
+        y: 1057
+        width: 276
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +251,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec302bd347b873300800000000000000
-      internalID: 231807237200413646
+      spriteID: 8688ec232f682e350800000000000000
+      internalID: 6044542024677230696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_4
+      name: sting_ray_4
       rect:
         serializedVersion: 2
-        x: 67
-        y: 1186
-        width: 263
-        height: 292
+        x: 2164
+        y: 1055
+        width: 282
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,20 +273,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48d72074a21fc3ac0800000000000000
-      internalID: -3873956415563203196
+      spriteID: 8c3260c15c3d61560800000000000000
+      internalID: 7284242290850538440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_5
+      name: sting_ray_5
       rect:
         serializedVersion: 2
-        x: 458
-        y: 1185
-        width: 262
-        height: 287
+        x: 2673
+        y: 1045
+        width: 288
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,20 +295,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c438a12c880d16270800000000000000
-      internalID: 8242098078855365452
+      spriteID: 9b691af8bc491a340800000000000000
+      internalID: 4873339873800591033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_6
+      name: sting_ray_6
       rect:
         serializedVersion: 2
-        x: 843
-        y: 1185
-        width: 263
-        height: 288
+        x: 3185
+        y: 1034
+        width: 293
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,20 +317,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 453ed3dc35d1428a0800000000000000
-      internalID: -6330902930413198508
+      spriteID: b8a1ad44cfb29e4e0800000000000000
+      internalID: -1951980601001502069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_7
+      name: sting_ray_7
       rect:
         serializedVersion: 2
-        x: 1226
-        y: 1185
-        width: 262
-        height: 287
+        x: 98
+        y: 522
+        width: 298
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,20 +339,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20014bd3298bdac10800000000000000
-      internalID: 2066510742272872450
+      spriteID: 5776f68501abeecd0800000000000000
+      internalID: -2526877761542330507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_8
+      name: sting_ray_8
       rect:
         serializedVersion: 2
-        x: 75
-        y: 801
-        width: 263
-        height: 288
+        x: 590
+        y: 554
+        width: 321
+        height: 431
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,20 +361,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9af4a79d47fa4690800000000000000
-      internalID: -7617003907115058534
+      spriteID: 2f44677a8e66dc3e0800000000000000
+      internalID: -2031854707446233870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_9
+      name: sting_ray_9
       rect:
         serializedVersion: 2
-        x: 458
-        y: 801
-        width: 262
-        height: 287
+        x: 1105
+        y: 616
+        width: 322
+        height: 356
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,20 +383,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e0e2b3589346fc40800000000000000
-      internalID: 5545694312671666409
+      spriteID: 4e4aa69b886f77900800000000000000
+      internalID: 682284935656678628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_10
+      name: sting_ray_10
       rect:
         serializedVersion: 2
-        x: 835
-        y: 802
-        width: 263
-        height: 292
+        x: 1114
+        y: 568
+        width: 66
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,20 +405,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a26edfce5778b8260800000000000000
-      internalID: 7100918178036704810
+      spriteID: 486c4f2b0bacb3730800000000000000
+      internalID: 3979997555977406084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_11
+      name: sting_ray_11
       rect:
         serializedVersion: 2
-        x: 1174
-        y: 800
-        width: 327
-        height: 292
+        x: 1617
+        y: 616
+        width: 322
+        height: 356
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,20 +427,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a9c952010cf79e30800000000000000
-      internalID: 4510350633099446697
+      spriteID: 1d87a4c7d9ed13f10800000000000000
+      internalID: 2247822457011075281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_12
+      name: sting_ray_12
       rect:
         serializedVersion: 2
-        x: 65
-        y: 419
-        width: 268
-        height: 295
+        x: 1626
+        y: 568
+        width: 66
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -461,20 +449,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2924461bbe5d1ff10800000000000000
-      internalID: 2301856092833202834
+      spriteID: 0522d37d4a404ac50800000000000000
+      internalID: 6675465653702173264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_13
+      name: sting_ray_13
       rect:
         serializedVersion: 2
-        x: 408
-        y: 416
-        width: 337
-        height: 269
+        x: 2129
+        y: 616
+        width: 322
+        height: 356
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,20 +471,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4c32aca7e12b1d420800000000000000
-      internalID: 2653097499476763588
+      spriteID: 40840a655e0848e20800000000000000
+      internalID: 3351945745159702532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_14
+      name: sting_ray_14
       rect:
         serializedVersion: 2
-        x: 793
-        y: 433
-        width: 340
-        height: 211
+        x: 2138
+        y: 568
+        width: 66
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,20 +493,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c288cfeaa98dfa1f0800000000000000
-      internalID: -1031367630772205524
+      spriteID: 68201f3d067a09e70800000000000000
+      internalID: 9119973279739740806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_15
+      name: sting_ray_15
       rect:
         serializedVersion: 2
-        x: 1178
-        y: 431
-        width: 340
-        height: 213
+        x: 2641
+        y: 616
+        width: 325
+        height: 359
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,20 +515,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2ea155f6b26ec180800000000000000
-      internalID: -9093222059675111890
+      spriteID: 0062cfdd9f24171a0800000000000000
+      internalID: -6813591120296270336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_16
+      name: sting_ray_16
       rect:
         serializedVersion: 2
-        x: 29
-        y: 117
-        width: 337
-        height: 119
+        x: 2642
+        y: 603
+        width: 33
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,20 +537,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32a80b698f00c7480800000000000000
-      internalID: -8900237695910901213
+      spriteID: 434743be97fbaf780800000000000000
+      internalID: -8648389604053584844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_17
+      name: sting_ray_17
       rect:
         serializedVersion: 2
-        x: 93
-        y: 210
-        width: 205
-        height: 38
+        x: 3153
+        y: 616
+        width: 325
+        height: 359
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,20 +559,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a82456fe4997dc6c0800000000000000
-      internalID: -4121504403395624310
+      spriteID: c2f0cf66796f7bbf0800000000000000
+      internalID: -308506919323300052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_18
+      name: sting_ray_18
       rect:
         serializedVersion: 2
-        x: 119
-        y: 229
-        width: 130
-        height: 33
+        x: 3154
+        y: 603
+        width: 33
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,20 +581,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 580e03b921217f910800000000000000
-      internalID: 1870984041318113413
+      spriteID: 404d81830e647a640800000000000000
+      internalID: 5091115832593404932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turtle_19
+      name: sting_ray_19
       rect:
         serializedVersion: 2
-        x: 458
-        y: 171
-        width: 250
-        height: 71
+        x: 78
+        y: 42
+        width: 321
+        height: 431
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,96 +603,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dca399235433bf6e0800000000000000
-      internalID: -1802790853537088819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: turtle_20
-      rect:
-        serializedVersion: 2
-        x: 508
-        y: 221
-        width: 179
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c2293097ac39c780800000000000000
-      internalID: -8662325717893569854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: turtle_21
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 35
-        width: 351
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d4186151017795a80800000000000000
-      internalID: -8477613912591269555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: turtle_22
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 39
-        width: 334
-        height: 189
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 810f45886a6465be0800000000000000
-      internalID: -1488924945733586920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: turtle_23
-      rect:
-        serializedVersion: 2
-        x: 647
-        y: 38
-        width: 91
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58abff3fd435e39c0800000000000000
-      internalID: -3945624629258765691
+      spriteID: 248b8a446891759a0800000000000000
+      internalID: -6244494293857683390
       vertices: []
       indices: 
       edges: []
@@ -723,30 +623,26 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      turtle_0: -429890163646538327
-      turtle_1: 6688820631902906034
-      turtle_10: 7100918178036704810
-      turtle_11: 4510350633099446697
-      turtle_12: 2301856092833202834
-      turtle_13: 2653097499476763588
-      turtle_14: -1031367630772205524
-      turtle_15: -9093222059675111890
-      turtle_16: -8900237695910901213
-      turtle_17: -4121504403395624310
-      turtle_18: 1870984041318113413
-      turtle_19: -1802790853537088819
-      turtle_2: 7521697127347132656
-      turtle_20: -8662325717893569854
-      turtle_21: -8477613912591269555
-      turtle_22: -1488924945733586920
-      turtle_23: -3945624629258765691
-      turtle_3: 231807237200413646
-      turtle_4: -3873956415563203196
-      turtle_5: 8242098078855365452
-      turtle_6: -6330902930413198508
-      turtle_7: 2066510742272872450
-      turtle_8: -7617003907115058534
-      turtle_9: 5545694312671666409
+      sting_ray_0: -764547066418044734
+      sting_ray_1: 1939618969428604186
+      sting_ray_10: 3979997555977406084
+      sting_ray_11: 2247822457011075281
+      sting_ray_12: 6675465653702173264
+      sting_ray_13: 3351945745159702532
+      sting_ray_14: 9119973279739740806
+      sting_ray_15: -6813591120296270336
+      sting_ray_16: -8648389604053584844
+      sting_ray_17: -308506919323300052
+      sting_ray_18: 5091115832593404932
+      sting_ray_19: -6244494293857683390
+      sting_ray_2: 496513176578923132
+      sting_ray_3: 6044542024677230696
+      sting_ray_4: 7284242290850538440
+      sting_ray_5: 4873339873800591033
+      sting_ray_6: -1951980601001502069
+      sting_ray_7: -2526877761542330507
+      sting_ray_8: -2031854707446233870
+      sting_ray_9: 682284935656678628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

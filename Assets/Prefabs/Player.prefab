@@ -225,6 +225,8 @@ MonoBehaviour:
   startingShell: {fileID: 11400000, guid: f55c9f5c2b6f25544b33bd0267fd5279, type: 2}
   animator: {fileID: 6541828815969869035}
   shellSpriteRenderer: {fileID: 2830726316950586574}
+  isEquipped: 1
+  equipSoundClip: {fileID: 8300000, guid: e379413513e2d1943bb612bf5d8cf763, type: 3}
 --- !u!50 &51615022795382043
 Rigidbody2D:
   serializedVersion: 5
@@ -299,6 +301,7 @@ GameObject:
   - component: {fileID: 6630603367609240598}
   - component: {fileID: 5994189584340323985}
   - component: {fileID: 8925081242956838385}
+  - component: {fileID: 9081031723205988813}
   m_Layer: 0
   m_Name: Player Health
   m_TagString: Untagged
@@ -340,6 +343,9 @@ MonoBehaviour:
   playerHealth: {fileID: 7161639714892229593}
   healthBar: {fileID: 1195249180773020015, guid: adf584ae84ff52446ae2111219841653, type: 3}
   heartContainer: []
+  fullHeart: {fileID: -5185649437945853404, guid: 3f362a2b000d912418b12c7f3a9fdde9, type: 3}
+  emptyHeart: {fileID: -6739221631703133009, guid: 0624b2e484b97134caca717bfb40f9d5, type: 3}
+  lastFilledHeartIndex: 0
 --- !u!114 &8925081242956838385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,6 +372,20 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &9081031723205988813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7111673995791530359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c06f522f6d02b458e2f19cca93bf21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpdateHealthUI
+  playerHealth: {fileID: 7161639714892229593}
+  healthUI: {fileID: 5994189584340323985}
 --- !u!1 &7995939357433560264
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 5
+  iFrameLength: 2
 --- !u!114 &-6128233861421137876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,4 +796,5 @@ MonoBehaviour:
   dashCooldown: 1
   rb: {fileID: 0}
   dashSoundClip: {fileID: 8300000, guid: 4ed26a189d44f7344b19cc855fe1e9bf, type: 3}
+  shell: {fileID: 2254521384478589296}
   inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

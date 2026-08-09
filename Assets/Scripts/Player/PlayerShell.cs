@@ -18,8 +18,10 @@ public class PlayerShell : MonoBehaviour
     public Animator animator;
     public SpriteRenderer shellSpriteRenderer;
     
-    private bool isEquipped = true;
+    public bool isEquipped = true;
     private bool isThrowing = false;
+
+    [SerializeField] AudioClip equipSoundClip;
 
     private void Start()
     {
@@ -49,7 +51,7 @@ public class PlayerShell : MonoBehaviour
             foreach (ShellEffect effect in _currentShell.onEquipEffects)
                 effect.Trigger(transform.parent.transform);
         }
-        
+        SoundFXManager.Instance.PlaySoundFXClip(equipSoundClip, transform, 1f);
         transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
 
         animator.SetBool(Coconut, true);

@@ -17,6 +17,7 @@ public class PlayerDash : MonoBehaviour
     [SerializeField] float dashCooldown = 1f;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] private AudioClip dashSoundClip;
+    [SerializeField] private PlayerShell shell;
 
     Vector2 moveDirection;
 
@@ -30,7 +31,6 @@ public class PlayerDash : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         movement = GetComponent<PlayerMovement>();
-
         var playerMap = inputActions.FindActionMap("Player");
         if (inputActions != null)
         {
@@ -66,12 +66,15 @@ public class PlayerDash : MonoBehaviour
 
     private IEnumerator Dash()
     {
-        //Debug.Log("Got Here");
-        //Debug.Log(moveDirection);
-        SoundFXManager.instance.PlaySoundFXClip(dashSoundClip, transform, 1f);
-        movement.isDashing = true;
-        rb.linearVelocity = new Vector2(moveDirection.x * dashSpeed, moveDirection.y * dashSpeed);
-        yield return new WaitForSeconds(dashDuration);
-        movement.isDashing = false;
+        if (shell.isEquipped)
+        {
+            //Debug.Log("Got Here");
+            //Debug.Log(moveDirection);
+            SoundFXManager.Instance.PlaySoundFXClip(dashSoundClip, transform, 1f);
+            movement.isDashing = true;
+            rb.linearVelocity = new Vector2(moveDirection.x * dashSpeed, moveDirection.y * dashSpeed);
+            yield return new WaitForSeconds(dashDuration);
+            movement.isDashing = false;
+        }
     }
 }

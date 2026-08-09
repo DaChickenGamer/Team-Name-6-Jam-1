@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 8f180a9a7a716764caf50834b5dc7f25
+guid: fab3f47e8db5af1488b291029bb3b9ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2530564911472380330
-    second: button_0
+      213: 1898918936286717424
+    second: jellyfish_0
   - first:
-      213: 1763989116612304091
-    second: button_1
+      213: 5462400059112648395
+    second: jellyfish_1
+  - first:
+      213: -78061990173016979
+    second: jellyfish_2
+  - first:
+      213: -8645975425499938103
+    second: jellyfish_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_0
+      name: jellyfish_0
       rect:
         serializedVersion: 2
-        x: 45
-        y: 41
-        width: 439
-        height: 155
+        x: 49
+        y: 11
+        width: 169
+        height: 455
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa90165216f5e1320800000000000000
-      internalID: 2530564911472380330
+      spriteID: 0f5e1ae26b05a5a10800000000000000
+      internalID: 1898918936286717424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: button_1
+      name: jellyfish_1
       rect:
         serializedVersion: 2
-        x: 556
-        y: 39
-        width: 439
-        height: 151
+        x: 307
+        y: 32
+        width: 169
+        height: 445
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +159,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bdcd45b61c2fa7810800000000000000
-      internalID: 1763989116612304091
+      spriteID: bce6b78a9e75ecb40800000000000000
+      internalID: 5462400059112648395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyfish_2
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 21
+        width: 200
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6cf645980baaeef0800000000000000
+      internalID: -78061990173016979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyfish_3
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 2
+        width: 169
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2c15aa823530880800000000000000
+      internalID: -8645975425499938103
       vertices: []
       indices: 
       edges: []
@@ -173,8 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button_0: 2530564911472380330
-      button_1: 1763989116612304091
+      jellyfish_0: 1898918936286717424
+      jellyfish_1: 5462400059112648395
+      jellyfish_2: -78061990173016979
+      jellyfish_3: -8645975425499938103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
