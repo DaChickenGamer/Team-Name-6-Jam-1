@@ -173,7 +173,7 @@ public class PlayerShell : MonoBehaviour
 
     private void TryPickup(Collider2D other)
     {
-        if (isEquipped || Time.time < _canPickupTime) return;
+        if (isEquipped || Time.time < _canPickupTime || isThrowing) return;
         if (!other.CompareTag("Player")) return;
 
         EquipShell();
