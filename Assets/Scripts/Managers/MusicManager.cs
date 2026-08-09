@@ -1,0 +1,66 @@
+using System.Collections;
+using UnityEngine;
+
+public class MusicManager : MonoBehaviour
+{
+    public static MusicManager Instance;
+
+    //Inspector vars
+    [SerializeField] private MusicLibrary musicLibrary;
+    [SerializeField] private AudioSource musicSource;
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+
+        if (musicSource == null)
+        {
+            musicSource = GetComponent<AudioSource>();
+            if (musicSource == null)
+            {
+                musicSource = gameObject.AddComponent<AudioSource>();
+            }
+        }
+
+        musicSource.enabled = true;
+        DontDestroyOnLoad(musicSource);
+    }
+
+    public void PlayMusic(string trackName, float fadeDuration = 0.5f)
+    {
+        StartCoroutine(AnimateMusicCrossFade(musicLibrary.GetClipFromName(trackName), fadeDuration));
+    }
+    
+    IEnumerator AnimateMusicCrossFade(AudioClip nextTrack, float fadeDuration = 0.5f)
+    {
+        if (musicSource == null) yield break;
+        
+        float percent = 0;
+        while (percent < 1)
+        {
+            percent += Time.deltaTime * 1 / fadeDuration;
+            musicSource.volume = Mathf.Lerp(1f, 0, percent);
+            yield return null;
+        }
+
+        musicSource.clip = nextTrack;
+        musicSource.enabled = true;
+        musicSource.Play();
+
+        percent = 0;
+        while (percent < 1)
+        {
+            percent += Time.deltaTime * 1 / fadeDuration;
+            musicSource.volume = Mathf.Lerp(0, 1f, percent);
+            yield return null;
+        }
+    }
+}
