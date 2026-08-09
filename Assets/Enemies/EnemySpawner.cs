@@ -6,7 +6,8 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyPrefab;
     private GameObject enemyToUse;
 
-    public void Activate()
+    //public void Activate()
+    public void Start()
     {
         enemyToUse = Instantiate(enemyPrefab, transform.position, transform.rotation);
     }
