@@ -497,6 +497,7 @@ GameObject:
   - component: {fileID: 233528235660390521}
   - component: {fileID: 2664609894844491090}
   - component: {fileID: 7161639714892229593}
+  - component: {fileID: -6128233861421137876}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -536,6 +537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 5
   animator: {fileID: 6541828815969869035}
+  isDashing: 0
 --- !u!114 &6731501905403585556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,6 +663,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 15af4ac8-53d8-496e-b836-bbbd3167132b
+    m_ActionName: 'Player/Ability[/Keyboard/f]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: 
@@ -752,3 +758,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 5
+--- !u!114 &-6128233861421137876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8425884272526291692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773966b57139c0f46a64e681d27e1acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDash
+  dashSpeed: 15
+  dashDuration: 0.2
+  dashCooldown: 1
+  rb: {fileID: 0}
+  dashSoundClip: {fileID: 8300000, guid: 4ed26a189d44f7344b19cc855fe1e9bf, type: 3}
+  inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
