@@ -7,6 +7,8 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 3;
     private int currentHealth;
+    public float iFrameLength = 2;
+    private float iFrameCount = 0;
 
     public event Action OnDeath;
     public event Action<int> OnHealthChanged;
@@ -20,6 +22,14 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth; 
+    }
+
+    private void Update()
+    {
+        if(iFrameCount >= 0)
+        {
+            iFrameCount -= Time.deltaTime;
+        }
     }
 
     public int GetCurrentHealth()
@@ -79,8 +89,12 @@ public class PlayerHealth : MonoBehaviour
 
     public void RemoveHealth(int amount)
     {
-        RemoveHealthEvent?.Invoke(amount);
-        if (amount < 0) return;
-        SetHealth(currentHealth - amount);
+        if(iFrameCount <= 0)
+        {
+            if (amount < 0) return;
+            RemoveHealthEvent?.Invoke(amount);
+            SetHealth(currentHealth - amount);
+            iFrameCount = iFrameLength;
+        }
     }
 }

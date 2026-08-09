@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
 
     public Animator animator;
+
+    public bool isDashing;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>(); 
@@ -36,6 +38,10 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (isDashing)
+        {
+            return;
+        }
         rb.MovePosition(rb.position + direction * (speed * Time.fixedDeltaTime));
     }
 
