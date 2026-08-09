@@ -12,6 +12,9 @@ public class Room : MonoBehaviour
     private IRoomTrigger[] _roomTriggers;
 
     private int _enemiesAlive = 0;
+    private bool _roomCleared = false;
+
+    private bool _hasEnemies = false;
 
     private void Start()
     {
@@ -21,6 +24,7 @@ public class Room : MonoBehaviour
         }
 
         _roomTriggers = transform.GetComponentsInChildren<IRoomTrigger>();
+        _hasEnemies = transform.GetComponentsInChildren<EnemySpawner>().Length > 0;
         
         foreach (IRoomTrigger t in _roomTriggers)
         {
@@ -37,9 +41,14 @@ public class Room : MonoBehaviour
     {
         _enemiesAlive--;
 
-        if (_enemiesAlive <= 0)
-        {
-            AllEnemiesDead?.Invoke();
-        }
+        if (_enemiesAlive > 0) return;
+        
+        _roomCleared = true;
+        AllEnemiesDead?.Invoke();
+    }
+    
+    public bool GetRoomCleared()
+    {
+        return _roomCleared || !_hasEnemies;
     }
 }

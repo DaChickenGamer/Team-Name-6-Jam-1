@@ -180,11 +180,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2166c8a27fcf7eb45a2b99f475d4004b, type: 3}
---- !u!1 &59382854 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5096448873321842264, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-  m_PrefabInstance: {fileID: 1365098128}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &59382855 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
@@ -195,24 +190,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7691694494909414105, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
   m_PrefabInstance: {fileID: 1365098128}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59382854}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 237f927bf6b5df741a8686da6db836f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gate
---- !u!114 &59382859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59382854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bad70efb2f3adb54497a1985cc0d28e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RoomTeleport
 --- !u!4 &71246346 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8381362074214759243, guid: 2166c8a27fcf7eb45a2b99f475d4004b, type: 3}
@@ -1998,14 +1981,10 @@ PrefabInstance:
       propertyPath: nextGate
       value: 
       objectReference: {fileID: 2033777823}
-    m_RemovedComponents:
-    - {fileID: -4144894711866509457, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5096448873321842264, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 59382859}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
 --- !u!114 &1381103135 stripped
 MonoBehaviour:
@@ -2295,6 +2274,10 @@ PrefabInstance:
     - target: {fileID: 5096448873321842264, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
       propertyPath: m_Name
       value: Gate
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096448873321842264, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7691694494909414105, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
       propertyPath: nextGate
@@ -3001,7 +2984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Room
   Gates:
   - {fileID: 59382857}
-  - {fileID: 59382857}
+  - {fileID: 1381103135}
 --- !u!1001 &1911188077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3563,7 +3546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5928784358949857034, guid: 057778be54ee6854cbb0ac451f7c406f, type: 3}
       propertyPath: levels.Array.size
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7312048559742418434, guid: 057778be54ee6854cbb0ac451f7c406f, type: 3}
       propertyPath: m_Name
