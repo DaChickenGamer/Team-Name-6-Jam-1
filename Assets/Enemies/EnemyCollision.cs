@@ -1,11 +1,30 @@
+using System;
 using UnityEngine;
 
 public class EnemyCollision : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int contactDamage = 1;
-    void OrEnter2D(Collider2D other)
+    public bool isBouncy = false;
+    private Rigidbody2D rb;
+    void Start()
     {
+        if(isBouncy) rb = GetComponent<Rigidbody2D>();
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(isBouncy && !other.CompareTag("Projectile") && !other.CompareTag("Enemy"))
+        {
+            Vector2 contactNormal = other.ClosestPoint(transform.position) - new Vector2(transform.position.x, transform.position.y);
+            if(Math.Abs(contactNormal.x) > 0)
+            {
+                rb.linearVelocity *= new Vector2(1,-1);
+            }
+            if(Math.Abs(contactNormal.x) > 0)
+            {
+                rb.linearVelocity *= new Vector2(-1,1);
+            }
+        }
         if(other.CompareTag("Player"))
         {
             PlayerHealth healthScript = other.GetComponentInParent<PlayerHealth>();
