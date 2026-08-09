@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39fc5e8da8f4a574b8fad7e971c6a5ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShell
-  startingShell: {fileID: 11400000, guid: f55c9f5c2b6f25544b33bd0267fd5279, type: 2}
+  startingShell: {fileID: 11400000, guid: 575cf01a8c15fd641a17371058087beb, type: 2}
   animator: {fileID: 6541828815969869035}
   shellSpriteRenderer: {fileID: 2830726316950586574}
   isEquipped: 1

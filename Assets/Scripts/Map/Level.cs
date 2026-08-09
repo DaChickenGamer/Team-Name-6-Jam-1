@@ -11,7 +11,7 @@ public class Level : MonoBehaviour
     {
         foreach (Room room in rooms)
         {
-            room.OnEnterRoom += () => _currentRoom = room;
+            room.OnEnterRoom += (temp_room) => _currentRoom = room;
         } 
     }
 }

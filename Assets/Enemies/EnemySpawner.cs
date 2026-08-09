@@ -1,17 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawner : MonoBehaviour, IRoomTrigger
 {
     public GameObject enemyPrefab;
     private GameObject enemyToUse;
 
     //public void Activate()
-    public void Start()
-    {
-        enemyToUse = Instantiate(enemyPrefab, transform.position, transform.rotation);
-    }
-
     private void PositionEnemy()
     {
         enemyToUse.transform.position = transform.position;
@@ -22,5 +17,12 @@ public class EnemySpawner : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(transform.position, Vector3.one);
+    }
+
+    public void OnEnterRoom(Room room)
+    {
+        enemyToUse = Instantiate(enemyPrefab, transform.position, transform.rotation);
+        room.IncreaseEnemiesAlive();
+        enemyToUse.GetComponent<EnemyHealth>().OnDeath += room.DecreaseEnemiesAlive;
     }
 }

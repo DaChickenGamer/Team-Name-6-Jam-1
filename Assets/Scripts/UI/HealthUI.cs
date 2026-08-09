@@ -31,11 +31,16 @@ public class HealthUI : MonoBehaviour
     
     public void RemoveHeart()
     {
-        heartContainer.RemoveAt(heartContainer.Count - 1);
-        if (heartContainer.Count - 1 == lastFilledHeartIndex)
-        {
-            lastFilledHeartIndex--;
-        }
+        if (heartContainer.Count == 0) return;
+
+        int lastIndex = heartContainer.Count - 1;
+        Image heart = heartContainer[lastIndex];
+        heartContainer.RemoveAt(lastIndex);
+        if (heart)
+            Destroy(heart.gameObject);
+
+        if (lastFilledHeartIndex > heartContainer.Count)
+            lastFilledHeartIndex = heartContainer.Count;
     }
 
     public void FillHeart()

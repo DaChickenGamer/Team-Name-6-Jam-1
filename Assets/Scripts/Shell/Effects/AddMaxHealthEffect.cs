@@ -1,4 +1,3 @@
-using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 [CreateAssetMenu(fileName="New Add Health Effect", menuName = "Data/Effects/Add Health Effect")]
@@ -8,9 +7,15 @@ public class AddMaxHealthEffect : ShellEffect
     
     public override void Trigger(Transform source = null)
     {
-        var player = source != null && source.CompareTag("Player") ? source.gameObject : GameObject.FindGameObjectWithTag("Player");
-        
+        var player = source != null && source.CompareTag("Player")
+            ? source.gameObject
+            : GameObject.FindGameObjectWithTag("Player");
+
+        if (!player) return;
+
         PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+        if (!playerHealth) return;
+
         playerHealth.AddMaxHealth(amountToAdd);
     }
 }

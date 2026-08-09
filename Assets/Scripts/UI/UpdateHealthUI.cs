@@ -6,7 +6,7 @@ public class UpdateHealthUI : MonoBehaviour
     public PlayerHealth playerHealth;
     public HealthUI healthUI;
 
-    private void Start()
+    private void Awake()
     {
         playerHealth.AddMaxHealthEvent += AddMaxHealth;
         playerHealth.AddHealthEvent += AddHealth;

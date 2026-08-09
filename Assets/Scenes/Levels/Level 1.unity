@@ -313,8 +313,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Room
   Gates:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1764044393}
+  - {fileID: 1227179326}
 --- !u!1001 &195151879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Room
   Gates:
-  - {fileID: 0}
+  - {fileID: 1590890220}
 --- !u!1001 &349438524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -564,22 +564,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
   m_PrefabInstance: {fileID: 564812560}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &425398011 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-  m_PrefabInstance: {fileID: 1870198462}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &425398014 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7691694494909414105, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-  m_PrefabInstance: {fileID: 1870198462}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 237f927bf6b5df741a8686da6db836f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gate
 --- !u!1001 &439388164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1155,67 +1139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237f927bf6b5df741a8686da6db836f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gate
---- !u!1001 &641841829
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1733330538}
-    m_Modifications:
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.0000010728835
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 5096448873321842264, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_Name
-      value: Gate
-      objectReference: {fileID: 0}
-    - target: {fileID: 7691694494909414105, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: nextGate
-      value: 
-      objectReference: {fileID: 425398014}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
 --- !u!1001 &693600827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2220,9 +2143,6 @@ PrefabInstance:
       addedObject: {fileID: 1251378252}
     - targetCorrespondingSourceObject: {fileID: 7384864823735389787, guid: 3c541f1e530c186438fdcd957b7e6fe2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 425398011}
-    - targetCorrespondingSourceObject: {fileID: 7384864823735389787, guid: 3c541f1e530c186438fdcd957b7e6fe2, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 952227456}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 131147598012435591, guid: 3c541f1e530c186438fdcd957b7e6fe2, type: 3}
@@ -2252,8 +2172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Room
   Gates:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 952227452}
 --- !u!1001 &1560780528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2453,22 +2372,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2166c8a27fcf7eb45a2b99f475d4004b, type: 3}
---- !u!4 &1626086195 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-  m_PrefabInstance: {fileID: 641841829}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1626086198 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7691694494909414105, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-  m_PrefabInstance: {fileID: 641841829}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 237f927bf6b5df741a8686da6db836f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gate
 --- !u!4 &1633160318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
@@ -2649,8 +2552,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Room
   Gates:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2116233990}
+  - {fileID: 1945663751}
 --- !u!1001 &1733330537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2712,9 +2615,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7384864823735389787, guid: 3c541f1e530c186438fdcd957b7e6fe2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 408030714}
-    - targetCorrespondingSourceObject: {fileID: 7384864823735389787, guid: 3c541f1e530c186438fdcd957b7e6fe2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1626086195}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 131147598012435591, guid: 3c541f1e530c186438fdcd957b7e6fe2, type: 3}
       insertIndex: -1
@@ -2743,8 +2643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Room
   Gates:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 408030712}
 --- !u!114 &1764044393 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7691694494909414105, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
@@ -2993,69 +2892,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Room
   Gates:
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!1001 &1870198462
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1513620264}
-    m_Modifications:
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.0000010728835
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5096448873321842264, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: m_Name
-      value: Gate (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7691694494909414105, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
-      propertyPath: nextGate
-      value: 
-      objectReference: {fileID: 1626086198}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
+  - {fileID: 1166531928}
+  - {fileID: 1176446309}
 --- !u!1001 &1873729027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3251,9 +3089,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Room
   Gates:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1633160321}
+  - {fileID: 1185583900}
+  - {fileID: 633672293}
 --- !u!1001 &1919868338
 PrefabInstance:
   m_ObjectHideFlags: 0

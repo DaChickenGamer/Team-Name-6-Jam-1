@@ -1,19 +1,18 @@
 using System;
 using System.Collections;
-using System.Numerics;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Vector2 = UnityEngine.Vector2;
-using Vector3 = UnityEngine.Vector3;
 
 public class PlayerShell : MonoBehaviour
 {
-    private static readonly int Costume = Animator.StringToHash("costume");
     private static readonly int Throw = Animator.StringToHash("throw");
     public ShellSO startingShell;
     private ShellSO _currentShell;
 
     private Vector2 throwDir;
+    private Rigidbody2D _rb;
+    private Coroutine _hideShellRoutine;
+    private float _canPickupTime;
 
     public Animator animator;
     public SpriteRenderer shellSpriteRenderer;
@@ -25,14 +24,24 @@ public class PlayerShell : MonoBehaviour
     public Action UnequipShellEvent;
 
     [SerializeField] AudioClip equipSoundClip;
+    [SerializeField] float pickupDelay = 0.2f;
 
-    private void Start()
+    private void Awake()
     {
-        if (startingShell)
-        {
-            _currentShell = startingShell;
-            EquipShell();
-        }
+        _rb = GetComponent<Rigidbody2D>();
+        if (_rb)
+            _rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+    }
+
+    private IEnumerator Start()
+    {
+        if (!startingShell) yield break;
+
+        _currentShell = startingShell;
+        isEquipped = false; // prefab defaults to true; allow initial EquipShell to run
+        // Wait so HealthUI can build base hearts before on-equip adds more.
+        yield return null;
+        EquipShell();
     }
 
     public void OnAttack(InputAction.CallbackContext ctxt)
@@ -48,29 +57,45 @@ public class PlayerShell : MonoBehaviour
 
     public void EquipShell()
     {
-        if (!_currentShell) return;
+        if (!_currentShell || isEquipped) return;
 
-        if (_currentShell.onEquipEffects.Count > 0){
-            foreach (ShellEffect effect in _currentShell.onEquipEffects)
-                effect.Trigger(transform.parent.transform);
+        Transform player = GameObject.FindGameObjectWithTag("Player").transform;
+        transform.parent = player;
+        transform.localPosition = Vector3.zero;
+
+        if (_hideShellRoutine != null)
+        {
+            StopCoroutine(_hideShellRoutine);
+            _hideShellRoutine = null;
         }
-        SoundFXManager.Instance.PlaySoundFXClip(equipSoundClip, transform, 1f);
-        transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
+
+        foreach (ShellEffect effect in _currentShell.onEquipEffects)
+        {
+            if (effect)
+                effect.Trigger(player);
+        }
+
+        if (SoundFXManager.Instance && equipSoundClip)
+            SoundFXManager.Instance.PlaySoundFXClip(equipSoundClip, transform, 1f);
 
         EquipShellEvent?.Invoke(_currentShell);
         isEquipped = true;
+        isThrowing = false;
         shellSpriteRenderer.enabled = false;
     }
     
-    public void UnequipShell()
+    public void UnequipShell(Transform playerTransform = null)
     {
-        if (_currentShell.onUnequipEffects.Count > 0)
+        Transform source = playerTransform != null ? playerTransform : transform.parent;
+        foreach (ShellEffect effect in _currentShell.onUnequipEffects)
         {
-            foreach (ShellEffect effect in _currentShell.onUnequipEffects)
-                if (effect)
-                    effect.Trigger(transform.parent.transform);
+            if (effect)
+                effect.Trigger(source);
         }
-        StartCoroutine(HideShell());
+        
+        if (_hideShellRoutine != null)
+            StopCoroutine(_hideShellRoutine);
+        _hideShellRoutine = StartCoroutine(HideShell());
     }
     
     IEnumerator HideShell()
@@ -78,27 +103,31 @@ public class PlayerShell : MonoBehaviour
         yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Throw"));
         yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName("Throw"));
 
+        if (isEquipped)
+        {
+            _hideShellRoutine = null;
+            yield break;
+        }
+
         UnequipShellEvent?.Invoke();
         shellSpriteRenderer.sprite = _currentShell.shellSprite;
         shellSpriteRenderer.enabled = true;
-        isEquipped = false;
-    }
-
-    public void PickupShell()
-    {
-        
+        _hideShellRoutine = null;
     }
     
     public void ThrowShell(Vector2 dir)
     {
         if (!isEquipped) return;
 
+        Transform playerTransform = transform.parent;
         transform.parent = null;
         throwDir = dir;
         isThrowing = true;
+        isEquipped = false;
+        _canPickupTime = Time.time + pickupDelay;
         
         animator.SetTrigger(Throw);
-        UnequipShell();
+        UnequipShell(playerTransform);
     }
 
     public void BreakShell()
@@ -108,19 +137,27 @@ public class PlayerShell : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        HandleShellCollision(other);
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        // Enter can be missed while isThrowing / during the pickup lockout.
+        TryPickup(other);
+    }
+
+    private void HandleShellCollision(Collider2D other)
+    {
         if (isEquipped) return;
 
-        if (_currentShell.onHitEffects.Count > 0)
+        foreach (ShellEffect effect in _currentShell.onHitEffects)
         {
-            foreach (ShellEffect effect in _currentShell.onHitEffects)
-            {
-                if(effect)
-                    effect.Trigger(transform.parent.transform);
-            }
+            if (effect)
+                effect.Trigger(transform);
         }
 
         // TODO: Make a more well defined way of stopping a throw later
-        if(isThrowing && other.CompareTag("Enemy"))
+        if (isThrowing && other.CompareTag("Enemy"))
         {
             isThrowing = false;
             EnemyHealth enemyHealth = other.GetComponentInParent<EnemyHealth>();
@@ -131,21 +168,29 @@ public class PlayerShell : MonoBehaviour
             isThrowing = false;
         }
 
-        if(!isThrowing && other.CompareTag("Player"))
-            EquipShell();
+        TryPickup(other);
+    }
+
+    private void TryPickup(Collider2D other)
+    {
+        if (isEquipped || Time.time < _canPickupTime) return;
+        if (!other.CompareTag("Player")) return;
+
+        EquipShell();
     }
 
     private void FixedUpdate()
     {
-        // Move Effects should probably be a subset that also gets the shell movement info given to it and than returns a position rather than it setting the position in the script
+        if (!isThrowing || !_currentShell) return;
 
-        if (!isThrowing) return;
-        
-        if(!_currentShell.moveEffect)
-            transform.position = Vector2.MoveTowards(transform.position, transform.position + new Vector3(throwDir.x, throwDir.y, 0), 10 * Time.deltaTime);
+        Vector3 nextPos = !_currentShell.moveEffect
+            ? Vector2.MoveTowards(transform.position, transform.position + new Vector3(throwDir.x, throwDir.y, 0), 10 * Time.fixedDeltaTime)
+            : _currentShell.moveEffect.TriggerMove(transform);
+
+        if (_rb)
+            _rb.MovePosition(nextPos);
         else
-            transform.position = _currentShell.moveEffect.TriggerMove(transform);
-        
+            transform.position = nextPos;
     }
 
     public Vector2 GetThrowDir()
