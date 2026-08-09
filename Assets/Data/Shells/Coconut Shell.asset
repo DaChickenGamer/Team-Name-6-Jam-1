@@ -17,3 +17,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 312c80337f630e24ba48de9430acd872, type: 2}
   onUnequipEffects:
   - {fileID: 11400000, guid: 799ae67d6090f8541b39534986160f8b, type: 2}
+  moveEffect: {fileID: 0}
+  shellAnimations: {fileID: 7108339969198208228, guid: 2bef70b3bd8987f4eb5eeaf3a4796f98, type: 3}
+  shellSprite: {fileID: 8545781588704198415, guid: 8e97ae1afa55424468a76d35d5da82d0, type: 3}
