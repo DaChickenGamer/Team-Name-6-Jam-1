@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5117828196329670687}
   - component: {fileID: 7691694494909414105}
   - component: {fileID: -8948485234942680247}
+  - component: {fileID: -4144894711866509457}
   m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
@@ -153,3 +154,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &-4144894711866509457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5096448873321842264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad70efb2f3adb54497a1985cc0d28e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomTeleport
