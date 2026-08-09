@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2740429377758342084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6462378173135680135}
+  - component: {fileID: 5834734321323709314}
+  - component: {fileID: -9065224331086817763}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6462378173135680135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2740429377758342084}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5834734321323709314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2740429377758342084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc46196b7bb410b4688b23ba2aadada8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MusicLibrary
+  tracks:
+  - trackName: MainMenu
+    clip: {fileID: 8300000, guid: fb97f8fc914849e4294d32796753db02, type: 3}
+  - trackName: PauseMenu
+    clip: {fileID: 8300000, guid: 2732a0214f7154e4fabf2378a8b2e9df, type: 3}
+  - trackName: Level2
+    clip: {fileID: 8300000, guid: 8f6e82771cb1a5143aec6cfff733aa85, type: 3}
+  - trackName: Level3
+    clip: {fileID: 8300000, guid: 03df42b83ddd1394091e00b9f2d5e940, type: 3}
+--- !u!114 &-9065224331086817763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2740429377758342084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31240cdf181875b4f9b8c828263ffee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MusicManager
+  musicLibrary: {fileID: 5834734321323709314}
+  musicSource: {fileID: 3733760174388489789, guid: c7f7632eeee051545a15a1db10b4f4cd, type: 3}
