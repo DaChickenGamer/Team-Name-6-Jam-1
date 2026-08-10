@@ -286,6 +286,10 @@ MonoBehaviour:
   isEquipped: 1
   shellTeleportDistance: 30
   equipSoundClip: {fileID: 8300000, guid: e379413513e2d1943bb612bf5d8cf763, type: 3}
+  soundClips:
+  - {fileID: 8300000, guid: dfb6b3d475509c741977adbb8f186ea2, type: 3}
+  - {fileID: 8300000, guid: 3be82e63f97076d488795f6957e123e4, type: 3}
+  - {fileID: 8300000, guid: 4c57957578b1c884586e5233778f4417, type: 3}
   pickupDelay: 0.2
 --- !u!50 &51615022795382043
 Rigidbody2D:

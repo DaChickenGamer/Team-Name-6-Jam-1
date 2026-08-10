@@ -10,6 +10,6 @@ public class StartButton : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        MusicManager.Instance.PlayMusic("Level2");
+        MusicManager.Instance.PlayMusic("Level1");
     }
 }

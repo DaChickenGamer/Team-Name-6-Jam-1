@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3299628389784196750}
   - component: {fileID: 6717590514640495592}
   - component: {fileID: -3751452645607970663}
+  - component: {fileID: 8713904891166944504}
   m_Layer: 0
   m_Name: Barricuda
   m_TagString: Enemy
@@ -214,6 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCollision
   contactDamage: 2
   isBouncy: 0
+  attackSoundClip: {fileID: 8300000, guid: 89c5434a9df3e6c428568f1df962493b, type: 3}
 --- !u!114 &6717590514640495592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,3 +242,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 2
+  deathSoundClip: {fileID: 8300000, guid: e1dc31c1e7cdec54ab0f67eea3cddfb5, type: 3}
+--- !u!95 &8713904891166944504
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085167244088843550}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

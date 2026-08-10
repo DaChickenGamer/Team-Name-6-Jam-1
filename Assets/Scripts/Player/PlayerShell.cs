@@ -26,6 +26,10 @@ public class PlayerShell : MonoBehaviour
     public Action UnequipShellEvent;
 
     [SerializeField] AudioClip equipSoundClip;
+    [SerializeField] AudioClip[] soundClips;
+    int randNum;
+
+
     [SerializeField] float pickupDelay = 0.2f;
 
     private void Awake()
@@ -52,6 +56,12 @@ public class PlayerShell : MonoBehaviour
         if (ctxt.performed)
         {
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            if (isEquipped)
+            {
+                randNum = UnityEngine.Random.Range(0, 3);
+                SoundFXManager.Instance.PlaySoundFXClip(soundClips[randNum], transform, 1f);
+                Debug.Log(soundClips[randNum]);
+            }
             Vector2 throwRot = Vector2.Normalize(new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y));
             
             ThrowShell(throwRot);
