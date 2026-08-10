@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -8502866571891043295}
   - component: {fileID: -2700526364220905063}
   - component: {fileID: 6960345221462271962}
+  - component: {fileID: 2599203055585694118}
   m_Layer: 0
   m_Name: Turtle
   m_TagString: Enemy
@@ -275,3 +276,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2599203055585694118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085167244088843550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31593205b9d4394499ce7149b4520143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurtleEntry
+  roarClip: {fileID: 8300000, guid: 9fd04bfc73c0b2d40a6e134c0049ca18, type: 3}
