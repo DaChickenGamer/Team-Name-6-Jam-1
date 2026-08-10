@@ -26,12 +26,14 @@ public class LevelManager : MonoBehaviour
    {
       _currentLevelName = level;
       SceneManager.LoadScene((int)level);
-   }
+      _currentLevel = FindAnyObjectByType<Level>();
+    }
 
    public void LoadLevel(int level)
    {
       SceneManager.LoadScene(level);
-   }
+      _currentLevel = FindAnyObjectByType<Level>();
+    }
 
    public Level GetCurrentLevel()
    {

@@ -9,13 +9,13 @@ public class PlayerSpawner : MonoBehaviour
 
     private void Start()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+         playerToUse = GameObject.FindGameObjectWithTag("Player");
 
         
-        if(!player)
+        if(!playerToUse)
             playerToUse = Instantiate(playerPrefab, transform.position, transform.rotation);
         
-        player.transform.position = transform.position;
+        playerToUse.transform.position = transform.position;
     }
 
     private void PositionPlayer()

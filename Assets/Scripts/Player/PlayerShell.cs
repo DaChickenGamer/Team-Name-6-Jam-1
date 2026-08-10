@@ -43,10 +43,6 @@ public class PlayerShell : MonoBehaviour
 
     private IEnumerator Start()
     {
-        if (GameManager.Instance.LevelManager.GetCurrentLevel())
-        { 
-            GameManager.Instance.LevelManager.GetCurrentLevel().ChangedRoom += FixShellOutOfBounds;
-        }
         
         if (!startingShell) yield break;
 
@@ -213,10 +209,11 @@ public class PlayerShell : MonoBehaviour
         
     }
 
-    private void FixShellOutOfBounds(Room room)
+    public void FixShellOutOfBounds(Room room)
     {
         if (isEquipped) return;
         print("Got Here");
+        new WaitForSeconds(1);
         transform.position = _playerTransform.position;
         isThrowing = false; 
     }
@@ -224,5 +221,10 @@ public class PlayerShell : MonoBehaviour
     public Vector2 GetThrowDir()
     {
         return throwDir;
+    }
+
+    public bool IsThrowing()
+    {
+        return isThrowing;
     }
 }

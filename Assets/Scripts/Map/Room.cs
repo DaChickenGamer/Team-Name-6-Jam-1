@@ -16,11 +16,16 @@ public class Room : MonoBehaviour
 
     private bool _hasEnemies = false;
 
+    private PlayerShell shellScript;
+
+    private Level currentLevel;
+
+
     private void Start()
     {
         foreach (Gate g in Gates)
         {
-            g.GateExited += (player) => OnEnterRoom?.Invoke(this);
+            g.GateExited += (player) => OnEnterRoom?.Invoke(this); 
         }
 
         _roomTriggers = transform.GetComponentsInChildren<IRoomTrigger>();
@@ -30,6 +35,13 @@ public class Room : MonoBehaviour
         {
             OnEnterRoom += t.OnEnterRoom;
         }
+        OnEnterRoom += ResetShell;
+    }
+
+    private void ResetShell(Room room)
+    {
+        shellScript = FindAnyObjectByType<PlayerShell>();
+        shellScript.FixShellOutOfBounds(room);
     }
 
     public void IncreaseEnemiesAlive()
