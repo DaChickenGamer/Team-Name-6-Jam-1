@@ -74,7 +74,7 @@ public class EnemyHealth : MonoBehaviour
                         thanksForPlayingUI.ShowThanksText();
                     }
                     else
-                        Instantiate(teleporter, transform.position, transform.rotation);
+                        Instantiate(teleporter, transform.parent.position, transform.parent.rotation);
                 }
                 Destroy(gameObject);
             }

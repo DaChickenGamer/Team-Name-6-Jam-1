@@ -24,6 +24,7 @@ public class EnemySpawner : MonoBehaviour, IRoomTrigger
         if (room.GetRoomCleared()) return;
         
         enemyToUse = Instantiate(enemyPrefab, transform.position, transform.rotation);
+        enemyToUse.transform.SetParent(transform.parent);
         room.IncreaseEnemiesAlive();
         enemyToUse.GetComponent<EnemyHealth>().OnDeath += room.DecreaseEnemiesAlive;
     }

@@ -2063,7 +2063,7 @@ MonoBehaviour:
   speed: 5
   animator: {fileID: 6541828815969869035}
   isDashing: 0
-  stunDuration: 1
+  stunDuration: 0.5
 --- !u!114 &6731501905403585556
 MonoBehaviour:
   m_ObjectHideFlags: 0
