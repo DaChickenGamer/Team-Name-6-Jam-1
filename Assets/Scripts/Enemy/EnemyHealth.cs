@@ -32,7 +32,7 @@ public class EnemyHealth : MonoBehaviour
         {
             if (isTurtle)
             {
-                randNum = UnityEngine.Random.Range(0, 8);
+                randNum = UnityEngine.Random.Range(0, 7);
                 SoundFXManager.Instance.PlaySoundFXClip(soundClips[randNum], transform, 1f);
             }
             health -= d;
