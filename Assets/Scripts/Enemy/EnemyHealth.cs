@@ -1,8 +1,4 @@
-using System;
 using Unity.Behavior;
-using Unity.Mathematics;
-using Unity.VisualScripting;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
