@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
     public float iFrameLength = 2;
     private float iFrameCount = 0;
+    public bool isGlass = false;
 
     public event Action OnDeath;
     public event Action<int> OnHealthChanged;
@@ -94,11 +95,13 @@ public class PlayerHealth : MonoBehaviour
 
     public void RemoveHealth(int amount)
     {
+        int a = amount;
+        if(isGlass) a *= 2;
         if(iFrameCount <= 0)
         {
-            if (amount < 0) return;
-            RemoveHealthEvent?.Invoke(amount);
-            SetHealth(currentHealth - amount);
+            if (a < 0) return;
+            RemoveHealthEvent?.Invoke(a);
+            SetHealth(currentHealth - a);
             iFrameCount = iFrameLength;
         }
     }

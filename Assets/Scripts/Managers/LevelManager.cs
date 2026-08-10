@@ -28,6 +28,11 @@ public class LevelManager : MonoBehaviour
       SceneManager.LoadScene((int)level);
    }
 
+   public void LoadLevel(int level)
+   {
+      SceneManager.LoadScene(level);
+   }
+
    public Level GetCurrentLevel()
    {
       return _currentLevel;
@@ -36,5 +41,10 @@ public class LevelManager : MonoBehaviour
    public LevelName GetCurrentLevelName()
    {
       return _currentLevelName;
+   }
+
+   public void NextLevel()
+   {
+      LoadLevel(SceneManager.loadedSceneCount + 1);
    }
 }
