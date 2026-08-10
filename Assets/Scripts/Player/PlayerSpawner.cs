@@ -19,6 +19,8 @@ public class PlayerSpawner : MonoBehaviour
         
         PlayerHealth playerHealth = playerToUse.GetComponent<PlayerHealth>();
         playerHealth.ResetHealth();
+        
+        CleanUpShell();
     }
 
     private void PositionPlayer()
@@ -31,5 +33,17 @@ public class PlayerSpawner : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(transform.position, Vector3.one);
+    }
+    
+    // TODO: REPLACE BANDAID FIX
+    private void CleanUpShell()
+    {
+        PlayerShell[] playerShells = FindObjectsOfType<PlayerShell>();
+
+        foreach (PlayerShell playerShell in playerShells)
+        {
+            if (!playerShell.isEquipped)
+                Destroy(playerShell.gameObject);
+        }
     }
 }

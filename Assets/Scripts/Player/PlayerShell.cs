@@ -31,7 +31,6 @@ public class PlayerShell : MonoBehaviour
     [SerializeField] AudioClip[] soundClips;
     int randNum;
 
-
     [SerializeField] float pickupDelay = 0.2f;
 
     private void Awake()
@@ -212,7 +211,8 @@ public class PlayerShell : MonoBehaviour
     public void FixShellOutOfBounds(Room room)
     {
         if (isEquipped) return;
-        print("Got Here");
+        
+        _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         transform.position = _playerTransform.position;
         isThrowing = false; 
     }
