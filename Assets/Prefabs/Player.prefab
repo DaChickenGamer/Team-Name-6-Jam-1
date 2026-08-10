@@ -284,6 +284,7 @@ MonoBehaviour:
   animator: {fileID: 6541828815969869035}
   shellSpriteRenderer: {fileID: 2830726316950586574}
   isEquipped: 1
+  shellTeleportDistance: 30
   equipSoundClip: {fileID: 8300000, guid: e379413513e2d1943bb612bf5d8cf763, type: 3}
   pickupDelay: 0.2
 --- !u!50 &51615022795382043
@@ -399,12 +400,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c7cae330097f44fb2e624dff1a595b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthUI
-  playerHealth: {fileID: 7161639714892229593}
   healthBar: {fileID: 1195249180773020015, guid: adf584ae84ff52446ae2111219841653, type: 3}
   heartContainer: []
   fullHeart: {fileID: -5185649437945853404, guid: 3f362a2b000d912418b12c7f3a9fdde9, type: 3}
   emptyHeart: {fileID: -6739221631703133009, guid: 0624b2e484b97134caca717bfb40f9d5, type: 3}
-  lastFilledHeartIndex: 0
 --- !u!114 &8925081242956838385
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -20,6 +20,8 @@ public class PlayerShell : MonoBehaviour
     public bool isEquipped = true;
     private bool isThrowing = false;
 
+    private Transform _playerTransform;
+
     public Action<ShellSO> EquipShellEvent;
     public Action UnequipShellEvent;
 
@@ -35,6 +37,8 @@ public class PlayerShell : MonoBehaviour
 
     private IEnumerator Start()
     {
+        GameManager.Instance.LevelManager.GetCurrentLevel().ChangedRoom += FixShellOutOfBounds;
+        
         if (!startingShell) yield break;
 
         _currentShell = startingShell;
@@ -118,7 +122,7 @@ public class PlayerShell : MonoBehaviour
     {
         if (!isEquipped) return;
 
-        Transform playerTransform = transform.parent;
+        _playerTransform = transform.parent;
         transform.parent = null;
         throwDir = dir;
         isThrowing = true;
@@ -126,7 +130,7 @@ public class PlayerShell : MonoBehaviour
         _canPickupTime = Time.time + pickupDelay;
         
         animator.SetTrigger(Throw);
-        UnequipShell(playerTransform);
+        UnequipShell(_playerTransform);
     }
 
     public void BreakShell()
@@ -189,6 +193,16 @@ public class PlayerShell : MonoBehaviour
             _rb.MovePosition(nextPos);
         else
             transform.position = nextPos;
+
+        
+    }
+
+    private void FixShellOutOfBounds(Room room)
+    {
+        if (isEquipped) return;
+        
+        transform.position = _playerTransform.position;
+        isThrowing = false; 
     }
 
     public Vector2 GetThrowDir()
