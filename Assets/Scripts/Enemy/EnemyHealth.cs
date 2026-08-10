@@ -1,5 +1,7 @@
+using System;
 using Unity.Behavior;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -12,8 +14,10 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] AudioClip deathSoundClip;
     private SpriteRenderer renderer;
     private float deathTimer = 0;
+    
+    public Action<int> OnHealthChanged;
+    
     [SerializeField] private bool isTurtle;
-
     [SerializeField] AudioClip[] soundClips;
     int randNum;
 
@@ -33,6 +37,7 @@ public class EnemyHealth : MonoBehaviour
                 SoundFXManager.Instance.PlaySoundFXClip(soundClips[randNum], transform, 1f);
             }
             health -= d;
+            OnHealthChanged?.Invoke(d);
         }
         
         if(health <= 0)
@@ -69,5 +74,10 @@ public class EnemyHealth : MonoBehaviour
             }
             renderer.color = new Vector4(renderer.color.r, renderer.color.g, renderer.color.b, deathTimer);
         }
+    }
+
+    public int GetHealth()
+    {
+        return health;
     }
 }
