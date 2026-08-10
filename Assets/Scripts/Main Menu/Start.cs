@@ -9,7 +9,7 @@ public class StartButton : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        GameManager.Instance.LevelManager.LoadLevel(LevelName.LevelOne);
         MusicManager.Instance.PlayMusic("Level1");
     }
 }
