@@ -19,7 +19,6 @@ public class Level : MonoBehaviour
     
     private void RoomEntered(Room room)
     {
-        print("RAHHHHHHHHH");
         _currentRoom = room;
         ChangedRoom?.Invoke(room);
     }
