@@ -57,6 +57,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 45f76598f60bb884bac7e4e6ab9a1b68, type: 3}
   - trackName: Level1
     clip: {fileID: 8300000, guid: fb9dccb610db5ab419749f5f5bb6feed, type: 3}
+  - trackName: Level1Boss
+    clip: {fileID: 8300000, guid: 9d701290f47c6c04690e4a48d060aa63, type: 3}
+  - trackName: Level2Boss
+    clip: {fileID: 8300000, guid: 7352fbe0890ab14409ddc5341c909f9c, type: 3}
+  - trackName: Level3Boss
+    clip: {fileID: 8300000, guid: 48a461511c619f04a92004a581245e41, type: 3}
 --- !u!114 &-9065224331086817763
 MonoBehaviour:
   m_ObjectHideFlags: 0
