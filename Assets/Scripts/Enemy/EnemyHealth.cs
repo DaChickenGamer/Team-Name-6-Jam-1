@@ -8,7 +8,6 @@ public class EnemyHealth : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int maxHealth;
     public bool isBoss = false;
-    public GameObject teleporter;
     private int health;
     public System.Action OnDeath;
     [SerializeField] AudioClip deathSoundClip;
@@ -46,7 +45,17 @@ public class EnemyHealth : MonoBehaviour
 
             if (isBoss)
             {
-                FindAnyObjectByType<ObtainShellUI>().DropShells();
+                if (GameManager.Instance.LevelManager.GetCurrentLevelNumber() >= 3)
+                {
+                    TimerUI timerUI = FindAnyObjectByType<TimerUI>();
+                    if (timerUI.HasTimer())
+                        timerUI.StopTimer();
+                        
+                    ThanksForPlayingUI thanksForPlayingUI = FindAnyObjectByType<ThanksForPlayingUI>();
+                    thanksForPlayingUI.ShowThanksText();
+                }
+                else
+                    FindAnyObjectByType<ObtainShellUI>().DropShells();
             }
             
             SoundFXManager.Instance.PlaySoundFXClip(deathSoundClip, transform, 1f);
@@ -64,17 +73,6 @@ public class EnemyHealth : MonoBehaviour
             {
                 if(isBoss)
                 {
-                    if (GameManager.Instance.LevelManager.GetCurrentLevelNumber() >= 3)
-                    {
-                        TimerUI timerUI = FindAnyObjectByType<TimerUI>();
-                        if (timerUI.HasTimer())
-                            timerUI.StopTimer();
-                        
-                        ThanksForPlayingUI thanksForPlayingUI = FindAnyObjectByType<ThanksForPlayingUI>();
-                        thanksForPlayingUI.ShowThanksText();
-                    }
-                    else
-                        Instantiate(teleporter, transform.parent.position, transform.parent.rotation);
                 }
                 Destroy(gameObject);
             }

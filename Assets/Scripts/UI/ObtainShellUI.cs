@@ -13,6 +13,7 @@ public class ObtainShellUI : MonoBehaviour
     
     private ShellSO[] shellsDropped = new ShellSO[3];
 
+    public GameObject teleporter;
     public void DropShells()
     {
         playerShell.BreakShell();
@@ -41,7 +42,9 @@ public class ObtainShellUI : MonoBehaviour
 
     public void PickShell(int index)
     {
+       
         playerShell.SwapShell(shellsDropped[index]);
         CloseUI();
+        Instantiate(teleporter, FindAnyObjectByType<Level>().GetCurrentRoom().transform);
     }
 }

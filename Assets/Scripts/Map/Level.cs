@@ -22,4 +22,9 @@ public class Level : MonoBehaviour
         _currentRoom = room;
         ChangedRoom?.Invoke(room);
     }
+    
+    public Room GetCurrentRoom()
+    {
+        return _currentRoom;
+    }
 }
