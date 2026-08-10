@@ -15,6 +15,11 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] AudioClip deathSoundClip;
     private SpriteRenderer renderer;
     private float deathTimer = 0;
+    [SerializeField] private bool isTurtle;
+
+    [SerializeField] AudioClip[] soundClips;
+    int randNum;
+
     void Awake()
     {
         health = maxHealth;
@@ -23,7 +28,16 @@ public class EnemyHealth : MonoBehaviour
     public void RemoveHealth(int d)
     {
         print(health);
-        if(health > 0) health -= d;
+        if (health > 0) 
+        {
+            if (isTurtle)
+            {
+                randNum = UnityEngine.Random.Range(0, 8);
+                SoundFXManager.Instance.PlaySoundFXClip(soundClips[randNum], transform, 1f);
+            }
+            health -= d;
+        }
+        
         if(health <= 0)
         {
             OnDeath?.Invoke();

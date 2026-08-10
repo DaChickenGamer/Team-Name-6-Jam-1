@@ -215,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCollision
   contactDamage: 2
   isBouncy: 1
-  attackSoundClip: {fileID: 8300000, guid: 9fd04bfc73c0b2d40a6e134c0049ca18, type: 3}
+  attackSoundClip: {fileID: 8300000, guid: fa25419a680fdac46880418a2d50899d, type: 3}
 --- !u!114 &-8502866571891043295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +243,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 10
   isBoss: 1
-  deathSoundClip: {fileID: 8300000, guid: e1dc31c1e7cdec54ab0f67eea3cddfb5, type: 3}
+  deathSoundClip: {fileID: 8300000, guid: db862accb4146ad47af9512ede0d2913, type: 3}
+  isTurtle: 1
+  soundClips:
+  - {fileID: 8300000, guid: 00a3529b7703ea847ac743b3e09aff93, type: 3}
+  - {fileID: 8300000, guid: 29f0b7e2a17cb0d4993f9a4f96d306db, type: 3}
+  - {fileID: 8300000, guid: 43d5998e72d4389408f79cea9b784dfb, type: 3}
+  - {fileID: 8300000, guid: 79fd07255e25082488d69494219e4836, type: 3}
+  - {fileID: 8300000, guid: 28249836354014945951b20e4e4c9ebb, type: 3}
+  - {fileID: 8300000, guid: ec0b4fd85606c2340831fce6c4e03e77, type: 3}
+  - {fileID: 8300000, guid: 373a87623d47cca4691cbb724c2f0595, type: 3}
 --- !u!95 &6960345221462271962
 Animator:
   serializedVersion: 7
