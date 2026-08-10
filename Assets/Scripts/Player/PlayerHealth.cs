@@ -115,4 +115,9 @@ public class PlayerHealth : MonoBehaviour
             }
         }
     }
+
+    public float GetiFrameCount()
+    {
+        return iFrameCount;
+    }
 }

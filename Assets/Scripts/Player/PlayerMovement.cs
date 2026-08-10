@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
 
     public Animator animator;
+    private PlayerHealth _playerHealth;
 
     public bool isDashing;
     private float _stunDuration = 1;
@@ -20,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         _startingStunDuration = _stunDuration;
+        _playerHealth = GetComponent<PlayerHealth>();
     }
     public void OnMovement(InputAction.CallbackContext ctxt)
     {
@@ -45,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Stun()
     {
+        if (_playerHealth.GetiFrameCount() > 0) return; 
+        
         stunTimer = _stunDuration;
     }
     public void ScaleSpeed(float s)
