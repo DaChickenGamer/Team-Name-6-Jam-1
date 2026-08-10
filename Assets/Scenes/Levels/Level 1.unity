@@ -237,7 +237,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: F To Dash with your shell
+  m_text: Space To Dash with your shell
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 949c27e64d71db944ab4e84a773f801b, type: 2}
   m_sharedMaterial: {fileID: -212375020412429902, guid: 949c27e64d71db944ab4e84a773f801b, type: 2}
