@@ -23,6 +23,7 @@ public class PlayerDash : MonoBehaviour
     public InputActionAsset inputActions;
     private InputAction moveAction;
     private InputAction dashAction;
+    public bool canDash = false;
 
     void Start()
     {
@@ -38,13 +39,12 @@ public class PlayerDash : MonoBehaviour
             dashAction = playerMap.FindAction("Ability");
             dashAction.Enable();
         }
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (movement.isDashing)
+        if (movement.isDashing || !canDash)
         {
             return;
         }
