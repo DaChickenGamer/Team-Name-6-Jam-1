@@ -45,6 +45,6 @@ public class LevelManager : MonoBehaviour
 
    public void NextLevel()
    {
-      LoadLevel(SceneManager.loadedSceneCount + 1);
+      LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
    }
 }

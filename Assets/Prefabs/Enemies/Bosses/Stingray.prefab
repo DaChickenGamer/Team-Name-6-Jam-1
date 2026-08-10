@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3299628389784196750}
   - component: {fileID: -8502866571891043295}
   - component: {fileID: -2700526364220905063}
+  - component: {fileID: 2110274507446905862}
   m_Layer: 0
   m_Name: Stingray
   m_TagString: Enemy
@@ -246,3 +247,25 @@ MonoBehaviour:
   deathSoundClip: {fileID: 8300000, guid: 9fd04bfc73c0b2d40a6e134c0049ca18, type: 3}
   isTurtle: 0
   soundClips: []
+--- !u!95 &2110274507446905862
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085167244088843550}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c0579c935453ec2449c66762e0784a66, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
