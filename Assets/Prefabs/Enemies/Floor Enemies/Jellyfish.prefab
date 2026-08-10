@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3299628389784196750}
   - component: {fileID: -1014954987918130108}
   - component: {fileID: -7123595674033442320}
+  - component: {fileID: 323983284433425053}
   m_Layer: 0
   m_Name: Jellyfish
   m_TagString: Enemy
@@ -242,4 +243,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 2
   isBoss: 0
+  teleporter: {fileID: 0}
   deathSoundClip: {fileID: 8300000, guid: e1dc31c1e7cdec54ab0f67eea3cddfb5, type: 3}
+  isTurtle: 0
+  soundClips: []
+--- !u!95 &323983284433425053
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085167244088843550}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 670ab4f51617c6642a57d3e06f2a1cac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
