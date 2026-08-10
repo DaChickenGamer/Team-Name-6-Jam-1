@@ -3,7 +3,6 @@ using Unity.Behavior;
 using UnityEngine;
 using Action = Unity.Behavior.Action;
 using Unity.Properties;
-using UnityEditor.UI;
 
 [Serializable, GeneratePropertyBag]
 [NodeDescription(name: "Shoot", story: "Shoot [projectile] at speed [speed] from [self] to [player] for [damage] damage", category: "Action", id: "f15dbb84f643de9b958775943ff4d7d9")]

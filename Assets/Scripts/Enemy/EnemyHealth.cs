@@ -1,8 +1,4 @@
-using System;
 using Unity.Behavior;
-using Unity.Mathematics;
-using Unity.VisualScripting;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -10,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int maxHealth;
     public bool isBoss = false;
+    public GameObject teleporter;
     private int health;
     public System.Action OnDeath;
     [SerializeField] AudioClip deathSoundClip;
@@ -56,7 +53,7 @@ public class EnemyHealth : MonoBehaviour
             {
                 if(isBoss)
                 {
-                    // do on boss death stuff
+                    Instantiate(teleporter, transform.position, transform.rotation);
                 }
                 Destroy(gameObject);
             }

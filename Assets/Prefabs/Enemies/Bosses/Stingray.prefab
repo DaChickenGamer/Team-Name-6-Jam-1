@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 3299628389784196750}
   - component: {fileID: -8502866571891043295}
   - component: {fileID: -2700526364220905063}
-  - component: {fileID: -273998543964336672}
   m_Layer: 0
   m_Name: Stingray
   m_TagString: Enemy
@@ -215,7 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCollision
   contactDamage: 2
   isBouncy: 0
-  attackSoundClip: {fileID: 8300000, guid: b2be2ca97c265624dbc4d7627310aef5, type: 3}
+  attackSoundClip: {fileID: 0}
 --- !u!114 &-8502866571891043295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,28 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 10
   isBoss: 1
+  teleporter: {fileID: 5475678845607994978, guid: d63e6e1170614864eb92918deff09203, type: 3}
   deathSoundClip: {fileID: 0}
   isTurtle: 0
   soundClips: []
---- !u!95 &-273998543964336672
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085167244088843550}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
