@@ -38,6 +38,11 @@ public class LevelManager : MonoBehaviour
       return _currentLevel;
    }
 
+   public int GetCurrentLevelNumber()
+   {
+      return SceneManager.GetActiveScene().buildIndex;
+   }
+
    public LevelName GetCurrentLevelName()
    {
       return _currentLevelName;

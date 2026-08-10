@@ -29,7 +29,7 @@ public class EnemyHealth : MonoBehaviour
         {
             if (isTurtle)
             {
-                randNum = UnityEngine.Random.Range(0, 7);
+                randNum = Random.Range(0, 7);
                 SoundFXManager.Instance.PlaySoundFXClip(soundClips[randNum], transform, 1f);
             }
             health -= d;
@@ -53,7 +53,17 @@ public class EnemyHealth : MonoBehaviour
             {
                 if(isBoss)
                 {
-                    Instantiate(teleporter, transform.position, transform.rotation);
+                    if (GameManager.Instance.LevelManager.GetCurrentLevelNumber() >= 3)
+                    {
+                        TimerUI timerUI = FindAnyObjectByType<TimerUI>();
+                        if (timerUI.HasTimer())
+                            timerUI.StopTimer();
+                        
+                        ThanksForPlayingUI thanksForPlayingUI = FindAnyObjectByType<ThanksForPlayingUI>();
+                        thanksForPlayingUI.ShowThanksText();
+                    }
+                    else
+                        Instantiate(teleporter, transform.position, transform.rotation);
                 }
                 Destroy(gameObject);
             }
