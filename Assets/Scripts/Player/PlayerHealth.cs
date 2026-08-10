@@ -67,6 +67,7 @@ public class PlayerHealth : MonoBehaviour
     public void ResetHealth()
     {
         currentHealth = maxHealth;
+        OnHealthChanged?.Invoke(currentHealth);
     }
 
     public void AddMaxHealth(int amount)

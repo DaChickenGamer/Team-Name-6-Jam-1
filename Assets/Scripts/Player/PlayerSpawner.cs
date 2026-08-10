@@ -16,6 +16,9 @@ public class PlayerSpawner : MonoBehaviour
             playerToUse = Instantiate(playerPrefab, transform.position, transform.rotation);
         
         playerToUse.transform.position = transform.position;
+        
+        PlayerHealth playerHealth = playerToUse.GetComponent<PlayerHealth>();
+        playerHealth.ResetHealth();
     }
 
     private void PositionPlayer()
