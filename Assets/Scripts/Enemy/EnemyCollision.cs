@@ -16,7 +16,7 @@ public class EnemyCollision : MonoBehaviour
         if(isBouncy && !other.CompareTag("Projectile") && !other.CompareTag("Enemy"))
         {
             Vector2 contactNormal = other.ClosestPoint(transform.position) - new Vector2(transform.position.x, transform.position.y);
-            if(Math.Abs(contactNormal.x) > 0)
+            if(Math.Abs(contactNormal.y) > 0)
             {
                 rb.linearVelocity *= new Vector2(1,-1);
             }

@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 8530092405479013690}
   m_Layer: 0
   m_Name: Shell
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,6 +285,7 @@ MonoBehaviour:
   shellSpriteRenderer: {fileID: 2830726316950586574}
   isEquipped: 1
   equipSoundClip: {fileID: 8300000, guid: e379413513e2d1943bb612bf5d8cf763, type: 3}
+  pickupDelay: 0.2
 --- !u!50 &51615022795382043
 Rigidbody2D:
   serializedVersion: 5
