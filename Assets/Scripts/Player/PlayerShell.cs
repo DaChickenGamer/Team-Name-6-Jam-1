@@ -41,7 +41,10 @@ public class PlayerShell : MonoBehaviour
 
     private IEnumerator Start()
     {
-        GameManager.Instance.LevelManager.GetCurrentLevel().ChangedRoom += FixShellOutOfBounds;
+        if (GameManager.Instance.LevelManager.GetCurrentLevel())
+        { 
+            GameManager.Instance.LevelManager.GetCurrentLevel().ChangedRoom += FixShellOutOfBounds;
+        }
         
         if (!startingShell) yield break;
 
