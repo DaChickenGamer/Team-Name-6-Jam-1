@@ -96,7 +96,10 @@ public class PlayerHealth : MonoBehaviour
     public void RemoveHealth(int amount)
     {
         int a = amount;
-        if(isGlass) a *= 2;
+        if (isGlass)
+        {
+            a *= 2;
+        }
         if(iFrameCount <= 0)
         {
             if (a < 0) return;
