@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
+using NUnit.Framework.Constraints;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerShell : MonoBehaviour
 {
+    public bool isGlass = false;
     private static readonly int Throw = Animator.StringToHash("throw");
     public ShellSO startingShell;
     private ShellSO _currentShell;
@@ -176,7 +178,8 @@ public class PlayerShell : MonoBehaviour
         {
             isThrowing = false;
             EnemyHealth enemyHealth = other.GetComponentInParent<EnemyHealth>();
-            enemyHealth.RemoveHealth(1); // needs to account for glass shell
+            enemyHealth.RemoveHealth(1);
+            if(isGlass) enemyHealth.RemoveHealth(1);
         }
         else if (isThrowing && !other.CompareTag("Player") && !other.CompareTag("Projectile"))
         {
