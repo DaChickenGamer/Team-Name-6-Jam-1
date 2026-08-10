@@ -9,6 +9,7 @@ using UnityEngine.XR;
 
 public class PlayerDash : MonoBehaviour
 {
+    private static readonly int Spin = Animator.StringToHash("spin");
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     [Header("Dash")]
@@ -22,6 +23,7 @@ public class PlayerDash : MonoBehaviour
     Vector2 moveDirection;
 
     private PlayerMovement movement;
+    private Animator _animator;
 
     public InputActionAsset inputActions;
     private InputAction moveAction;
@@ -31,6 +33,7 @@ public class PlayerDash : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         movement = GetComponent<PlayerMovement>();
+        _animator = GetComponentInChildren<Animator>();
         var playerMap = inputActions.FindActionMap("Player");
         if (inputActions != null)
         {
@@ -72,6 +75,7 @@ public class PlayerDash : MonoBehaviour
             //Debug.Log(moveDirection);
             SoundFXManager.Instance.PlaySoundFXClip(dashSoundClip, transform, 1f);
             movement.isDashing = true;
+            _animator.SetTrigger(Spin);
             rb.linearVelocity = new Vector2(moveDirection.x * dashSpeed, moveDirection.y * dashSpeed);
             yield return new WaitForSeconds(dashDuration);
             movement.isDashing = false;
