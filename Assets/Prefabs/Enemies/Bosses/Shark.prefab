@@ -215,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCollision
   contactDamage: 2
   isBouncy: 0
-  attackSoundClip: {fileID: 0}
+  attackSoundClip: {fileID: 8300000, guid: 89c5434a9df3e6c428568f1df962493b, type: 3}
 --- !u!114 &-8502866571891043295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
   maxHealth: 10
   isBoss: 1
   teleporter: {fileID: 0}
-  deathSoundClip: {fileID: 0}
+  deathSoundClip: {fileID: 8300000, guid: 6458501d435d7d64e993084547767a79, type: 3}
   isTurtle: 0
   soundClips: []
 --- !u!95 &2120016963475921967
