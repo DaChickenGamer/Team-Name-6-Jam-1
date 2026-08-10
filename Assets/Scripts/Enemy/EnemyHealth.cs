@@ -7,12 +7,16 @@ public class EnemyHealth : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int maxHealth;
+    public bool isBoss = false;
     private int health;
     public Action OnDeath;
     [SerializeField] AudioClip deathSoundClip;
+    private SpriteRenderer renderer;
+    private float deathTimer = 0;
     void Awake()
     {
         health = maxHealth;
+        renderer = GetComponent<SpriteRenderer>();
     }
     public void RemoveHealth(int d)
     {
@@ -22,7 +26,23 @@ public class EnemyHealth : MonoBehaviour
         {
             OnDeath?.Invoke();
             SoundFXManager.Instance.PlaySoundFXClip(deathSoundClip, transform, 1f);
-            Destroy(gameObject);
+            deathTimer = 1;
+        }
+    }
+    void Update()
+    {
+        if(deathTimer > 0)
+        {
+            deathTimer -= Time.deltaTime;
+            if(deathTimer <= 0)
+            {
+                if(isBoss)
+                {
+                    // do on boss death stuff
+                }
+                Destroy(gameObject);
+            }
+            renderer.color = new Vector4(renderer.color.r, renderer.color.g, renderer.color.b, deathTimer);
         }
     }
 }

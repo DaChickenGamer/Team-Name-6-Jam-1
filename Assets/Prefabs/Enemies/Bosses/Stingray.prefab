@@ -136,7 +136,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.98, y: 4.7315392}
+    oldSize: {x: 2.99, y: 4.761549}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -214,6 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCollision
   contactDamage: 2
   isBouncy: 0
+  attackSoundClip: {fileID: 0}
 --- !u!114 &-8502866571891043295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,3 +241,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 10
+  isBoss: 1
+  deathSoundClip: {fileID: 0}

@@ -215,6 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCollision
   contactDamage: 2
   isBouncy: 1
+  attackSoundClip: {fileID: 0}
 --- !u!114 &-8502866571891043295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 10
+  isBoss: 1
+  deathSoundClip: {fileID: 0}
 --- !u!95 &6960345221462271962
 Animator:
   serializedVersion: 7
