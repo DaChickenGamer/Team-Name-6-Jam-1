@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fa25ae833ee544bb43192fa5ec8bfc, type: 3}
   m_Name: Coconut Shell
   m_EditorClassIdentifier: Assembly-CSharp::ShellSO
+  description: Give you an extra heart when you're wearing it!
   onHitEffects: []
   onEquipEffects:
   - {fileID: 11400000, guid: 312c80337f630e24ba48de9430acd872, type: 2}
@@ -19,4 +20,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 799ae67d6090f8541b39534986160f8b, type: 2}
   moveEffect: {fileID: 0}
   shellAnimations: {fileID: 7108339969198208228, guid: 2bef70b3bd8987f4eb5eeaf3a4796f98, type: 3}
-  shellSprite: {fileID: 8545781588704198415, guid: 8e97ae1afa55424468a76d35d5da82d0, type: 3}
+  shellIcon: {fileID: 4097144792221710411, guid: 1ccad8338168976428bb0ab03dc3110e, type: 3}
+  shellThrowSprite: {fileID: 8545781588704198415, guid: 8e97ae1afa55424468a76d35d5da82d0, type: 3}

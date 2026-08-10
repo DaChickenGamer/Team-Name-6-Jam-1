@@ -55,6 +55,14 @@ public class PlayerShell : MonoBehaviour
         EquipShell();
     }
 
+    public void SwapShell(ShellSO newShell)
+    {
+        UnequipShell();
+        BreakShell();
+        _currentShell = newShell;
+        EquipShell();
+    }
+    
     public void OnAttack(InputAction.CallbackContext ctxt)
     {
         if (ctxt.performed)
@@ -106,12 +114,18 @@ public class PlayerShell : MonoBehaviour
     public void UnequipShell(Transform playerTransform = null)
     {
         Transform source = playerTransform != null ? playerTransform : transform.parent;
-        foreach (ShellEffect effect in _currentShell.onUnequipEffects)
+        if (_currentShell)
         {
-            if (effect)
-                effect.Trigger(source);
+            if (_currentShell.onUnequipEffects.Count > 0)
+            {
+                foreach (ShellEffect effect in _currentShell.onUnequipEffects)
+                {
+                    if (effect)
+                        effect.Trigger(source);
+                }
+            }
         }
-        
+
         if (_hideShellRoutine != null)
             StopCoroutine(_hideShellRoutine);
         _hideShellRoutine = StartCoroutine(HideShell());
@@ -129,7 +143,7 @@ public class PlayerShell : MonoBehaviour
         }
 
         UnequipShellEvent?.Invoke();
-        shellSpriteRenderer.sprite = _currentShell.shellSprite;
+        shellSpriteRenderer.sprite = _currentShell.shellThrowSprite;
         shellSpriteRenderer.enabled = true;
         _hideShellRoutine = null;
     }

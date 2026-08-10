@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fa25ae833ee544bb43192fa5ec8bfc, type: 3}
   m_Name: Steel Shell
   m_EditorClassIdentifier: Assembly-CSharp::ShellSO
+  description: Makes you more tough but a little slower.
   onHitEffects: []
   onEquipEffects:
   - {fileID: 11400000, guid: d95ea34e317bbb340975d6d79e16ec62, type: 2}
@@ -19,4 +20,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: aafebd7a6bd3ee345b8dc57032439cd5, type: 2}
   moveEffect: {fileID: 0}
   shellAnimations: {fileID: 7108339969198208228, guid: d34afdb4a0d103547af77dc6dcce72fd, type: 3}
-  shellSprite: {fileID: 2503130044209986225, guid: 65531db1907bd0c4c95dcafd1709ba3d, type: 3}
+  shellIcon: {fileID: -4371674359408645806, guid: 65531db1907bd0c4c95dcafd1709ba3d, type: 3}
+  shellThrowSprite: {fileID: -8601554748425970317, guid: 65531db1907bd0c4c95dcafd1709ba3d, type: 3}

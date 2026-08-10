@@ -43,6 +43,12 @@ public class EnemyHealth : MonoBehaviour
         if(health <= 0)
         {
             OnDeath?.Invoke();
+
+            if (isBoss)
+            {
+                FindAnyObjectByType<ObtainShellUI>().DropShells();
+            }
+            
             SoundFXManager.Instance.PlaySoundFXClip(deathSoundClip, transform, 1f);
             deathTimer = 1;
             Destroy(GetComponent<Collider2D>());

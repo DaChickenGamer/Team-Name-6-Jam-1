@@ -5,6 +5,8 @@ using UnityEngine.U2D.Animation;
 [CreateAssetMenu(fileName = "New Shell", menuName = "Data/Shell")]
 public class ShellSO : ScriptableObject
 {
+    public string description;
+    
     public List<ShellEffect> onHitEffects = new();
     
     public List<ShellEffect> onEquipEffects = new();
@@ -14,5 +16,7 @@ public class ShellSO : ScriptableObject
     
     [Header("Art Assets")]
     public SpriteLibraryAsset shellAnimations;
-    public Sprite shellSprite;
+
+    public Sprite shellIcon;
+    public Sprite shellThrowSprite;
 }
