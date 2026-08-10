@@ -1,6 +1,8 @@
 using System;
+using Unity.Behavior;
 using Unity.Mathematics;
 using Unity.VisualScripting;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -9,7 +11,7 @@ public class EnemyHealth : MonoBehaviour
     public int maxHealth;
     public bool isBoss = false;
     private int health;
-    public Action OnDeath;
+    public System.Action OnDeath;
     [SerializeField] AudioClip deathSoundClip;
     private SpriteRenderer renderer;
     private float deathTimer = 0;
@@ -41,6 +43,8 @@ public class EnemyHealth : MonoBehaviour
             OnDeath?.Invoke();
             SoundFXManager.Instance.PlaySoundFXClip(deathSoundClip, transform, 1f);
             deathTimer = 1;
+            Destroy(GetComponent<Collider2D>());
+            Destroy(GetComponent<BehaviorGraphAgent>());
         }
     }
     void Update()
