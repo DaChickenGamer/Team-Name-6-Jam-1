@@ -19,10 +19,13 @@ public class PlayerHealth : MonoBehaviour
     public event Action<int> RemoveMaxHealthEvent;
     public event Action<int> RemoveHealthEvent;
 
+    private PlayerMovement movement;
+
     
     private void Awake()
     {
         currentHealth = maxHealth;
+        movement = FindAnyObjectByType<PlayerMovement>();
     }
 
     private void Update()
@@ -104,9 +107,12 @@ public class PlayerHealth : MonoBehaviour
         if(iFrameCount <= 0)
         {
             if (a < 0) return;
-            RemoveHealthEvent?.Invoke(a);
-            SetHealth(currentHealth - a);
-            iFrameCount = iFrameLength;
+            if (movement.isDashing == false)
+            {
+                RemoveHealthEvent?.Invoke(a);
+                SetHealth(currentHealth - a);
+                iFrameCount = iFrameLength;
+            }
         }
     }
 }
