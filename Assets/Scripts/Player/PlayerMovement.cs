@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     private static readonly int IsWalking = Animator.StringToHash("move");
-    [SerializeField] private int speed = 5;
+    [SerializeField] private float speed = 5;
 
     private Vector2 direction;
     private Rigidbody2D rb;
@@ -44,6 +44,10 @@ public class PlayerMovement : MonoBehaviour
     public void Stun()
     {
         stunTimer = stunDuration;
+    }
+    public void ScaleSpeed(float s)
+    {
+        speed *= s;
     }
     void Update()
     {
