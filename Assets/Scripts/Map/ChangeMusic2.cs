@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class ChangeMusic2 : MonoBehaviour, IRoomTrigger
+public class ChangeMusic2 : MonoBehaviour
 {
-    public void OnEnterRoom(Room room)
+    public void Start()
     {
         MusicManager.Instance.PlayMusic("Level2");
     }
