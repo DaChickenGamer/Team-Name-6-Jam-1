@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
 {
    public List<Level> levels;
    private Level _currentLevel;
+   private LevelName  _currentLevelName;
 
    private void Start()
    {
@@ -23,11 +24,17 @@ public class LevelManager : MonoBehaviour
 
    public void LoadLevel(LevelName level)
    {
+      _currentLevelName = level;
       SceneManager.LoadScene((int)level);
    }
 
    public Level GetCurrentLevel()
    {
       return _currentLevel;
+   }
+
+   public LevelName GetCurrentLevelName()
+   {
+      return _currentLevelName;
    }
 }

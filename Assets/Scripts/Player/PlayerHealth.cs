@@ -40,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (newAmount > maxHealth)
             currentHealth = maxHealth;
-        else if (newAmount < 0)
+        else if (newAmount <= 0)
         {
             currentHealth = 0;
             OnDeath?.Invoke();
