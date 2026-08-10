@@ -243,7 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 10
   isBoss: 1
-  deathSoundClip: {fileID: 0}
+  deathSoundClip: {fileID: 8300000, guid: e1dc31c1e7cdec54ab0f67eea3cddfb5, type: 3}
 --- !u!95 &6960345221462271962
 Animator:
   serializedVersion: 7
