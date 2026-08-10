@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -8502866571891043295}
   - component: {fileID: -2700526364220905063}
   - component: {fileID: 2110274507446905862}
+  - component: {fileID: 5867932967519001565}
   m_Layer: 0
   m_Name: Stingray
   m_TagString: Enemy
@@ -216,7 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCollision
   contactDamage: 2
   isBouncy: 0
-  attackSoundClip: {fileID: 0}
+  attackSoundClip: {fileID: 8300000, guid: b2be2ca97c265624dbc4d7627310aef5, type: 3}
 --- !u!114 &-8502866571891043295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +271,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5867932967519001565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085167244088843550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5135b71fb68b31a4f87eba9c935b5cdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StingrayEntry
+  roarClip: {fileID: 8300000, guid: 7be81ef9fa9fc1a408e43524a1a2d5a9, type: 3}
 --- !u!1 &4349513217119230156
 GameObject:
   m_ObjectHideFlags: 0
