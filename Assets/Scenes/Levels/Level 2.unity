@@ -283,6 +283,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4292226929972643155, guid: cc31fa1475ff26e4688916dbf09bbed9, type: 3}
   m_PrefabInstance: {fileID: 124348732}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &149261108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 131147598012435591, guid: 3c541f1e530c186438fdcd957b7e6fe2, type: 3}
+  m_PrefabInstance: {fileID: 1620630472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &230605434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3991,13 +3996,28 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7384864823735389787, guid: 3c541f1e530c186438fdcd957b7e6fe2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 576088418}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 131147598012435591, guid: 3c541f1e530c186438fdcd957b7e6fe2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1620630474}
   m_SourcePrefab: {fileID: 100100000, guid: 3c541f1e530c186438fdcd957b7e6fe2, type: 3}
 --- !u!4 &1620630473 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7384864823735389787, guid: 3c541f1e530c186438fdcd957b7e6fe2, type: 3}
   m_PrefabInstance: {fileID: 1620630472}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1620630474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149261108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d6e3a20786beff4cbf93be9104bfd3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeMusic2Boss
 --- !u!4 &1653819049 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8381362074214759243, guid: 2166c8a27fcf7eb45a2b99f475d4004b, type: 3}
