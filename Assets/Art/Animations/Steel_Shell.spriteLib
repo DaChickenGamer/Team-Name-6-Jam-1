@@ -99,29 +99,29 @@ MonoBehaviour:
       m_Hash: 453341063
       m_Sprite: {fileID: 0}
       m_FromMain: 1
-      m_SpriteOverride: {fileID: 0}
+      m_SpriteOverride: {fileID: -8207290632369337900, guid: c261be4b1db4a8a4ab61f1e12774f6fb, type: 3}
     - m_Name: Frame 2
       m_Hash: 34356797
       m_Sprite: {fileID: 0}
       m_FromMain: 1
-      m_SpriteOverride: {fileID: 0}
+      m_SpriteOverride: {fileID: -2253171643744084921, guid: c261be4b1db4a8a4ab61f1e12774f6fb, type: 3}
     - m_Name: Frame 3
       m_Hash: 889917099
       m_Sprite: {fileID: 0}
       m_FromMain: 1
-      m_SpriteOverride: {fileID: 0}
+      m_SpriteOverride: {fileID: 8190553220539949382, guid: c261be4b1db4a8a4ab61f1e12774f6fb, type: 3}
     - m_Name: Frame 4
       m_Hash: 728734472
       m_Sprite: {fileID: 0}
       m_FromMain: 1
-      m_SpriteOverride: {fileID: 0}
+      m_SpriteOverride: {fileID: 3754292898759368398, guid: c261be4b1db4a8a4ab61f1e12774f6fb, type: 3}
     - m_Name: Frame 5
       m_Hash: 476621726
       m_Sprite: {fileID: 0}
       m_FromMain: 1
-      m_SpriteOverride: {fileID: 0}
+      m_SpriteOverride: {fileID: 4882052138596719743, guid: c261be4b1db4a8a4ab61f1e12774f6fb, type: 3}
     m_FromMain: 1
-    m_EntryOverrideCount: 0
+    m_EntryOverrideCount: 5
   m_PrimaryLibraryGUID: ebc24a15a94401d4696d8e2435860a37
-  m_ModificationHash: 639218402658615302
+  m_ModificationHash: 639219769573509638
   m_Version: 1

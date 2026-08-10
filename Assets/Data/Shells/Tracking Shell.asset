@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fa25ae833ee544bb43192fa5ec8bfc, type: 3}
   m_Name: Tracking Shell
   m_EditorClassIdentifier: Assembly-CSharp::ShellSO
+  description: Locks on to enemys!
   onHitEffects: []
   onEquipEffects: []
   onUnequipEffects: []
   moveEffect: {fileID: 11400000, guid: 81044e286dc1ae047bdfbcb097828cc7, type: 2}
   shellAnimations: {fileID: 7108339969198208228, guid: e2ab6ca750d68e24fb45fd52d3865d6d, type: 3}
-  shellSprite: {fileID: 2503130044209986225, guid: 65531db1907bd0c4c95dcafd1709ba3d, type: 3}
+  shellIcon: {fileID: -874513056025117962, guid: 65531db1907bd0c4c95dcafd1709ba3d, type: 3}
+  shellThrowSprite: {fileID: 2503130044209986225, guid: 65531db1907bd0c4c95dcafd1709ba3d, type: 3}

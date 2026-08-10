@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fa25ae833ee544bb43192fa5ec8bfc, type: 3}
   m_Name: Cardboard Shell
   m_EditorClassIdentifier: Assembly-CSharp::ShellSO
+  description: Makes you twice as fast, but you lose your dash!
   onHitEffects: []
   onEquipEffects:
   - {fileID: 11400000, guid: f91780051d7b48e4ba93ad27cfed1a0c, type: 2}
@@ -19,4 +20,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 89fe0e1c0f66fdc4ca0692de60e19e97, type: 2}
   moveEffect: {fileID: 0}
   shellAnimations: {fileID: 7108339969198208228, guid: 7d5d39e2a2578514d93f09f22fe9872f, type: 3}
-  shellSprite: {fileID: 2503130044209986225, guid: 65531db1907bd0c4c95dcafd1709ba3d, type: 3}
+  shellIcon: {fileID: 2319607082765445001, guid: 65531db1907bd0c4c95dcafd1709ba3d, type: 3}
+  shellThrowSprite: {fileID: 5620287544643046539, guid: 65531db1907bd0c4c95dcafd1709ba3d, type: 3}
