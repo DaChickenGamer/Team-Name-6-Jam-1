@@ -4,51 +4,27 @@ using UnityEngine.UI;
 
 public class HealthUI : MonoBehaviour
 {
-    public PlayerHealth playerHealth;
     public GameObject healthBar;
     public List<Image> heartContainer;
     
     public Sprite fullHeart;
     public Sprite emptyHeart;
-    
-    public int lastFilledHeartIndex;
-    
-    private void Start()
+
+    public void RedrawUI(int hearts, int maxHearts)
     {
-        for (int i = 0; i < playerHealth.maxHealth; i++)
+        foreach (var heart in heartContainer)
         {
-            AddHeart();
+            Destroy(heart.gameObject);
         }
         
-    }
-
-    public void AddHeart()
-    {
-        GameObject HeartInstance = Instantiate(healthBar, this.transform);
-        heartContainer.Add(HeartInstance.GetComponent<Image>());
-        lastFilledHeartIndex++;
-    }
-    
-    public void RemoveHeart()
-    {
-        heartContainer.RemoveAt(heartContainer.Count - 1);
-        if (heartContainer.Count - 1 == lastFilledHeartIndex)
+        heartContainer.Clear();
+        
+        for (int i = 0; i < maxHearts; i++)
         {
-            lastFilledHeartIndex--;
+            GameObject heartInstance = Instantiate(healthBar, transform);
+            Image heartImage = heartInstance.GetComponent<Image>();
+            heartImage.sprite = i < hearts ? fullHeart : emptyHeart;
+            heartContainer.Add(heartImage);
         }
-    }
-
-    public void FillHeart()
-    {
-        if (lastFilledHeartIndex >= heartContainer.Count) return;
-        heartContainer[lastFilledHeartIndex].sprite = fullHeart;
-        lastFilledHeartIndex++;
-    }
-
-    public void UnfillHeart()
-    {
-        if (lastFilledHeartIndex <= 0) return;
-        lastFilledHeartIndex--;
-        heartContainer[lastFilledHeartIndex].sprite = emptyHeart;
     }
 }

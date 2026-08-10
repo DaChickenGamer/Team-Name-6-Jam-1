@@ -27,7 +27,7 @@ public class RoomTeleport : MonoBehaviour
             90 => new Vector2(-offset, 0),
             180 => new Vector2(0, offset),
             270 => new Vector2(offset, 0),
-            _ => new Vector2(0, offset)
+            _ => new Vector2(0, -offset)
         };
 
         player.transform.position = _gate.nextGate.transform.position + teleportOffsetAmount;

@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 4494509739733469267}
   - component: {fileID: 1993350586919054339}
   - component: {fileID: 6541828815969869035}
+  - component: {fileID: 5058498132168577978}
+  - component: {fileID: 158822246592053251}
+  - component: {fileID: 325069146492341311}
   m_Layer: 0
   m_Name: Player Sprite
   m_TagString: Untagged
@@ -82,12 +85,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 9063770564199200420, guid: 4dff4ea01d515564e8656a80e74270e3, type: 3}
+  m_Sprite: {fileID: 5302302196619633889, guid: e9e517b8789e5854aacc378c924e3255, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.4399999, y: 1.6002603}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -115,6 +118,61 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5058498132168577978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004655612292574772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 27f1d6ab1f6277e45960552fedcb35c7, type: 3}
+--- !u!114 &158822246592053251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004655612292574772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13fc04eb318a0df4b8b61ab4961ab3ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CostumeManager
+  playerShell: {fileID: 2254521384478589296}
+  defaultCostume: {fileID: 7108339969198208228, guid: ab4a9428dbcf45d4dbb90bc92d5449e9, type: 3}
+  allCostumes:
+  - {fileID: 7108339969198208228, guid: d14ef5a3bfed7c64b8a899bfb693ca03, type: 3}
+  - {fileID: 7108339969198208228, guid: 7d5d39e2a2578514d93f09f22fe9872f, type: 3}
+  - {fileID: 7108339969198208228, guid: 27f1d6ab1f6277e45960552fedcb35c7, type: 3}
+  - {fileID: 7108339969198208228, guid: 2e02bf154d33aa04b9795246d62e6c2a, type: 3}
+  - {fileID: 7108339969198208228, guid: c94f9f9dce46be54f801354d8d31cb82, type: 3}
+  - {fileID: 7108339969198208228, guid: d7488789a34dead4386c717f5e34a1be, type: 3}
+  - {fileID: 7108339969198208228, guid: 02b6e97e11119bb43b23a7fc35be2578, type: 3}
+  - {fileID: 7108339969198208228, guid: d34afdb4a0d103547af77dc6dcce72fd, type: 3}
+  - {fileID: 7108339969198208228, guid: 14812e0038271134f98600d9beac9b47, type: 3}
+  - {fileID: 7108339969198208228, guid: e2ab6ca750d68e24fb45fd52d3865d6d, type: 3}
+--- !u!114 &325069146492341311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004655612292574772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
+  m_CategoryHash: 0.000000010741972
+  m_labelHash: 1.1037539e-22
+  m_SpriteKey: 0
+  m_SpriteHash: 1026439295
 --- !u!1 &6711841744025227214
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +188,7 @@ GameObject:
   - component: {fileID: 8530092405479013690}
   m_Layer: 0
   m_Name: Shell
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,11 +280,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39fc5e8da8f4a574b8fad7e971c6a5ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShell
-  startingShell: {fileID: 11400000, guid: f55c9f5c2b6f25544b33bd0267fd5279, type: 2}
+  startingShell: {fileID: 11400000, guid: 575cf01a8c15fd641a17371058087beb, type: 2}
   animator: {fileID: 6541828815969869035}
   shellSpriteRenderer: {fileID: 2830726316950586574}
   isEquipped: 1
   equipSoundClip: {fileID: 8300000, guid: e379413513e2d1943bb612bf5d8cf763, type: 3}
+  pickupDelay: 0.2
 --- !u!50 &51615022795382043
 Rigidbody2D:
   serializedVersion: 5
@@ -558,6 +617,7 @@ MonoBehaviour:
   speed: 5
   animator: {fileID: 6541828815969869035}
   isDashing: 0
+  stunDuration: 1
 --- !u!114 &6731501905403585556
 MonoBehaviour:
   m_ObjectHideFlags: 0

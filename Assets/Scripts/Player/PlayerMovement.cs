@@ -50,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
         if(stunTimer >= 0)
         {
             stunTimer -= Time.deltaTime;
+            rb.linearVelocity *= 0;
         }
     }
     private void FixedUpdate()
@@ -58,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-        rb.MovePosition(rb.position + direction * (speed * Time.fixedDeltaTime));
+        if(stunTimer <= 0) rb.MovePosition(rb.position + direction * (speed * Time.fixedDeltaTime));
     }
 
 }
