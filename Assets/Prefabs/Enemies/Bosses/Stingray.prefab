@@ -243,6 +243,6 @@ MonoBehaviour:
   maxHealth: 10
   isBoss: 1
   teleporter: {fileID: 5475678845607994978, guid: d63e6e1170614864eb92918deff09203, type: 3}
-  deathSoundClip: {fileID: 0}
+  deathSoundClip: {fileID: 8300000, guid: 9fd04bfc73c0b2d40a6e134c0049ca18, type: 3}
   isTurtle: 0
   soundClips: []
