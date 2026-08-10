@@ -213,7 +213,6 @@ public class PlayerShell : MonoBehaviour
     {
         if (isEquipped) return;
         print("Got Here");
-        new WaitForSeconds(1);
         transform.position = _playerTransform.position;
         isThrowing = false; 
     }

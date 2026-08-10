@@ -63,4 +63,9 @@ public class Room : MonoBehaviour
     {
         return _roomCleared || !_hasEnemies;
     }
+
+    private void OnDestroy()
+    {
+        OnEnterRoom -= ResetShell;
+    }
 }
