@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Threading.Tasks;
 using NUnit.Framework.Constraints;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -31,7 +32,10 @@ public class PlayerShell : MonoBehaviour
     [SerializeField] AudioClip[] soundClips;
     int randNum;
 
-    [SerializeField] float pickupDelay = 0.2f;
+    [SerializeField] float pickupDelay = 2.0f;
+    private float currentTimer = 0.0f;
+    private bool isTimerRunnning = false;
+
 
     private void Awake()
     {
@@ -72,10 +76,11 @@ public class PlayerShell : MonoBehaviour
     {
         if (!_currentShell || isEquipped) return;
 
+
         Transform player = GameObject.FindGameObjectWithTag("Player").transform;
         transform.parent = player;
         transform.localPosition = Vector3.zero;
-
+  
         if (_hideShellRoutine != null)
         {
             StopCoroutine(_hideShellRoutine);
@@ -95,6 +100,7 @@ public class PlayerShell : MonoBehaviour
         isEquipped = true;
         isThrowing = false;
         shellSpriteRenderer.enabled = false;
+        isTimerRunnning = false;
     }
     
     public void UnequipShell(Transform playerTransform = null)
@@ -180,7 +186,7 @@ public class PlayerShell : MonoBehaviour
         {
             isThrowing = false;
         }
-
+        StartCooldown();
         TryPickup(other);
     }
 
@@ -188,12 +194,16 @@ public class PlayerShell : MonoBehaviour
     {
         if (isEquipped || Time.time < _canPickupTime || isThrowing) return;
         if (!other.CompareTag("Player")) return;
-
-        EquipShell();
+        if (currentTimer <= 0.0f) EquipShell();
     }
 
     private void FixedUpdate()
     {
+        if (isTimerRunnning)
+        {
+            currentTimer -= Time.fixedDeltaTime;
+        }
+
         if (!isThrowing || !_currentShell) return;
 
         Vector3 nextPos = !_currentShell.moveEffect
@@ -204,7 +214,6 @@ public class PlayerShell : MonoBehaviour
             _rb.MovePosition(nextPos);
         else
             transform.position = nextPos;
-
         
     }
 
@@ -225,5 +234,13 @@ public class PlayerShell : MonoBehaviour
     public bool IsThrowing()
     {
         return isThrowing;
+    }
+
+    public void StartCooldown()
+    {
+        if (isTimerRunnning) return;
+
+        currentTimer = pickupDelay;
+        isTimerRunnning = true;
     }
 }

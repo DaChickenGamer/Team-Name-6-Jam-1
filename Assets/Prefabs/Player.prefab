@@ -1279,7 +1279,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: dfb6b3d475509c741977adbb8f186ea2, type: 3}
   - {fileID: 8300000, guid: 3be82e63f97076d488795f6957e123e4, type: 3}
   - {fileID: 8300000, guid: 4c57957578b1c884586e5233778f4417, type: 3}
-  pickupDelay: 0.2
+  pickupDelay: 1
 --- !u!50 &51615022795382043
 Rigidbody2D:
   serializedVersion: 5
