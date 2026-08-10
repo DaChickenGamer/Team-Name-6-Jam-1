@@ -216,7 +216,7 @@ public class PlayerShell : MonoBehaviour
     private void FixShellOutOfBounds(Room room)
     {
         if (isEquipped) return;
-        
+        print("Got Here");
         transform.position = _playerTransform.position;
         isThrowing = false; 
     }
