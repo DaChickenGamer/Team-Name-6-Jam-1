@@ -215,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCollision
   contactDamage: 2
   isBouncy: 1
-  attackSoundClip: {fileID: 0}
+  attackSoundClip: {fileID: 8300000, guid: 9fd04bfc73c0b2d40a6e134c0049ca18, type: 3}
 --- !u!114 &-8502866571891043295
 MonoBehaviour:
   m_ObjectHideFlags: 0
