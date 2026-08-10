@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class ChangeMusic : MonoBehaviour
+public class ChangeMusic : MonoBehaviour, IRoomTrigger
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+public void OnEnterRoom(Room room)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        MusicManager.Instance.PlayMusic("Level1Boss");
     }
 }

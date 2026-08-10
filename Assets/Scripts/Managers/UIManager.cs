@@ -46,7 +46,9 @@ public class UIManager : MonoBehaviour
         LevelManager levelManager = GameManager.Instance.LevelManager;
         
         print(levelManager.GetCurrentLevelName());
-        
+
+        MusicManager.Instance.PlayMusic("Level1");
+
         levelManager.LoadLevel(levelManager.GetCurrentLevelName());
     }
 
