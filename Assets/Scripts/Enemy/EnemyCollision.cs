@@ -1,4 +1,5 @@
 using System;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class EnemyCollision : MonoBehaviour
@@ -7,6 +8,7 @@ public class EnemyCollision : MonoBehaviour
     public int contactDamage = 1;
     public bool isBouncy = false;
     private Rigidbody2D rb;
+    [SerializeField] AudioClip attackSoundClip;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,6 +30,7 @@ public class EnemyCollision : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             PlayerHealth healthScript = other.GetComponentInParent<PlayerHealth>();
+            SoundFXManager.Instance.PlaySoundFXClip(attackSoundClip, transform, 0.2f);
             healthScript.RemoveHealth(contactDamage);
         }
         else if(!isBouncy && !other.CompareTag("Projectile") && !other.CompareTag("Enemy"))
