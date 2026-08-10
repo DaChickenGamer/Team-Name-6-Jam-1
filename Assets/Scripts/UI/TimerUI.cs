@@ -10,11 +10,6 @@ public class TimerUI : MonoBehaviour
     private bool doTimer = false;
     private float _startingTime;
 
-    private void Start()
-    {
-        EnableTimer();
-    }
-
     private void FixedUpdate()
     {
         if (!doTimer) return;

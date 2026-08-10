@@ -7,6 +7,10 @@ public class LevelTeleporter : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
         
+        PlayerShell playerShell = FindObjectOfType<PlayerShell>();
+        if (playerShell != null)
+            playerShell.EquipShell();
+                
         GameManager.Instance.LevelManager.NextLevel();
     }
 }
