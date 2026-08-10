@@ -893,6 +893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39fc5e8da8f4a574b8fad7e971c6a5ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShell
+  isGlass: 0
   startingShell: {fileID: 11400000, guid: 575cf01a8c15fd641a17371058087beb, type: 2}
   animator: {fileID: 6541828815969869035}
   shellSpriteRenderer: {fileID: 2830726316950586574}
@@ -1679,6 +1680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 5
   iFrameLength: 2
+  isGlass: 0
 --- !u!114 &-6128233861421137876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1696,8 +1698,10 @@ MonoBehaviour:
   dashCooldown: 1
   rb: {fileID: 0}
   dashSoundClip: {fileID: 8300000, guid: 4ed26a189d44f7344b19cc855fe1e9bf, type: 3}
+  denialSoundClip: {fileID: 8300000, guid: 5b3d7be93970f464bbb3969bb3511d46, type: 3}
   shell: {fileID: 2254521384478589296}
   inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  canDash: 0
 --- !u!1 &8954098617582822928
 GameObject:
   m_ObjectHideFlags: 0
