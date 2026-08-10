@@ -1701,7 +1701,7 @@ MonoBehaviour:
   denialSoundClip: {fileID: 8300000, guid: 5b3d7be93970f464bbb3969bb3511d46, type: 3}
   shell: {fileID: 2254521384478589296}
   inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  canDash: 0
+  canDash: 1
 --- !u!1 &8954098617582822928
 GameObject:
   m_ObjectHideFlags: 0

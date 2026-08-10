@@ -78,7 +78,7 @@ public class PlayerDash : MonoBehaviour
         }
         else
         {
-            SoundFXManager.Instance.PlaySoundFXClip(denialSoundClip, transform, 1f);
+            SoundFXManager.Instance.PlaySoundFXClip(denialSoundClip, transform, 0.5f);
         }
     }
 }
