@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName="Add Steel Effect", menuName = "Data/Effects/Add Steel Effect")]
 public class AddSteelEffect : ShellEffect
 {
-    public override void Trigger(Transform source = null)
+    public override void Trigger(Transform source = null, Transform hit = null)
     {
         var player = source != null && source.CompareTag("Player")
             ? source.gameObject

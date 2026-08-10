@@ -5,7 +5,7 @@ public class AddMaxHealthEffect : ShellEffect
 {
     public int amountToAdd;
     
-    public override void Trigger(Transform source = null)
+    public override void Trigger(Transform source = null, Transform hit = null)
     {
         var player = source != null && source.CompareTag("Player")
             ? source.gameObject

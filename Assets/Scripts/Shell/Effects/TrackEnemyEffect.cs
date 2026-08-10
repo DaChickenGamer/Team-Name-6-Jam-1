@@ -24,7 +24,7 @@ public class TrackEnemyEffect : ShellMoveEffect
         return closetEnemy ? Vector3.MoveTowards(shellTransform.position, closetEnemy.transform.position, 10 * Time.deltaTime) : Vector2.MoveTowards(shellTransform.position, shellTransform.position + new Vector3(shellTransform.GetComponent<PlayerShell>().GetThrowDir().x, shellTransform.GetComponent<PlayerShell>().GetThrowDir().y, 0), 10 * Time.deltaTime);
     }
 
-    public override void Trigger(Transform source = null)
+    public override void Trigger(Transform source = null, Transform hit = null)
     {
        // Not needed in here for now 
     }

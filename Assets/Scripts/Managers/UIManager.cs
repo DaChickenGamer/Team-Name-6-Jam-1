@@ -22,9 +22,6 @@ public class UIManager : MonoBehaviour
                enemyStun.isStunned = true;
            }
 
-           PlayerMovement playerMovement = _playerHealth.GetComponent<PlayerMovement>();
-           playerMovement.stunDuration = 1000000000;
-
            ProjectileCollision[] projectileCollisions = FindObjectsByType<ProjectileCollision>();
            foreach (var projectileCollision in projectileCollisions)
            {

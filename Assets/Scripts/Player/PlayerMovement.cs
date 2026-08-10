@@ -13,11 +13,13 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
 
     public bool isDashing;
-    public float stunDuration = 2;
+    private float _stunDuration = 1;
+    private float _startingStunDuration;
     private float stunTimer = 0;
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>(); 
+        rb = GetComponent<Rigidbody2D>();
+        _startingStunDuration = _stunDuration;
     }
     public void OnMovement(InputAction.CallbackContext ctxt)
     {
@@ -43,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Stun()
     {
-        stunTimer = stunDuration;
+        stunTimer = _stunDuration;
     }
     public void ScaleSpeed(float s)
     {
@@ -65,5 +67,30 @@ public class PlayerMovement : MonoBehaviour
         }
         if(stunTimer <= 0) rb.MovePosition(rb.position + direction * (speed * Time.fixedDeltaTime));
     }
+    
+    public void AddStunDuration(float duration)
+    {
+        if (duration <= 0) return;
+        
+        _stunDuration += duration;
+    }
 
+    public void RemoveStunDuration(float duration)
+    {
+        if (duration <= 0) return;
+        
+        _stunDuration -= duration;
+    }
+
+    public void SetStunDuration(float duration)
+    {
+        if (duration < 0) return;
+
+        _stunDuration = duration;
+    }
+
+    public void ResetStunDuration()
+    {
+        _stunDuration = _startingStunDuration;
+    }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName="Remove Steel Effect", menuName = "Data/Effects/Remove Steel Effect")]
 public class RemoveSteelEffect : ShellEffect
 {
-    public override void Trigger(Transform source = null)
+    public override void Trigger(Transform source = null, Transform hit = null)
     {
         var player = source != null && source.CompareTag("Player")
             ? source.gameObject

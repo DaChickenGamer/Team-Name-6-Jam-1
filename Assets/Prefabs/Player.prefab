@@ -880,6 +880,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 575cf01a8c15fd641a17371058087beb, type: 2}
   - {fileID: 11400000, guid: 5d9ceb7bb5270ac4eb39192680ddf129, type: 2}
   - {fileID: 11400000, guid: f55c9f5c2b6f25544b33bd0267fd5279, type: 2}
+  - {fileID: 11400000, guid: 08284e45270e03d46be5a86b49e4a58e, type: 2}
+  - {fileID: 11400000, guid: c52a4fc22c6d8d3409a39b5eb0f6ad59, type: 2}
+  - {fileID: 11400000, guid: e63ea62d8efc04e428e29a9528831da2, type: 2}
+  - {fileID: 11400000, guid: 92319836ce0c7e34586f2f74d0f62fc5, type: 2}
   shellDisplays:
   - {fileID: 4792741593356142035}
   - {fileID: 1858742843276755080}
@@ -2063,7 +2067,6 @@ MonoBehaviour:
   speed: 5
   animator: {fileID: 6541828815969869035}
   isDashing: 0
-  stunDuration: 0.5
 --- !u!114 &6731501905403585556
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -33,6 +33,7 @@ public class PlayerShell : MonoBehaviour
     int randNum;
 
     [SerializeField] float pickupDelay = 2.0f;
+    private float _startingPickupDelay = 0;
     private float currentTimer = 0.0f;
     private bool isTimerRunnning = false;
 
@@ -42,6 +43,7 @@ public class PlayerShell : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         if (_rb)
             _rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        _startingPickupDelay = pickupDelay;
     }
 
     private IEnumerator Start()
@@ -61,6 +63,7 @@ public class PlayerShell : MonoBehaviour
         BreakShell();
         _currentShell = newShell;
         EquipShell();
+        ResetPickupTimer();
     }
     
     public void OnAttack(InputAction.CallbackContext ctxt)
@@ -83,7 +86,6 @@ public class PlayerShell : MonoBehaviour
     public void EquipShell()
     {
         if (!_currentShell || isEquipped) return;
-
 
         Transform player = GameObject.FindGameObjectWithTag("Player").transform;
         transform.parent = player;
@@ -185,7 +187,7 @@ public class PlayerShell : MonoBehaviour
         foreach (ShellEffect effect in _currentShell.onHitEffects)
         {
             if (effect)
-                effect.Trigger(transform);
+                effect.Trigger(transform, other.transform);
         }
 
         // TODO: Make a more well defined way of stopping a throw later
@@ -256,5 +258,28 @@ public class PlayerShell : MonoBehaviour
 
         currentTimer = pickupDelay;
         isTimerRunnning = true;
+    }
+
+    public void AddPickupDelay(float time)
+    {
+        if (time <= 0) return;
+        pickupDelay += time;
+    }
+    
+    public void RemovePickupDelay(float time)
+    {
+        if (time <= 0) return;
+        pickupDelay -= time;
+    }
+
+
+    public void ResetPickupDelay()
+    {
+        pickupDelay = _startingPickupDelay;
+    }
+
+    public void ResetPickupTimer()
+    {
+        currentTimer = pickupDelay;
     }
 }
