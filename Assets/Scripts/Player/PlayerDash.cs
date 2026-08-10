@@ -13,6 +13,7 @@ public class PlayerDash : MonoBehaviour
     [SerializeField] float dashCooldown = 1f;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] private AudioClip dashSoundClip;
+    [SerializeField] private AudioClip denialSoundClip;
     [SerializeField] private PlayerShell shell;
 
     Vector2 moveDirection;
@@ -23,7 +24,7 @@ public class PlayerDash : MonoBehaviour
     public InputActionAsset inputActions;
     private InputAction moveAction;
     private InputAction dashAction;
-    public bool canDash = false;
+    public bool canDash = true;
 
     void Start()
     {
@@ -74,6 +75,10 @@ public class PlayerDash : MonoBehaviour
             rb.linearVelocity = new Vector2(moveDirection.x * dashSpeed, moveDirection.y * dashSpeed);
             yield return new WaitForSeconds(dashDuration);
             movement.isDashing = false;
+        }
+        else
+        {
+            SoundFXManager.Instance.PlaySoundFXClip(denialSoundClip, transform, 0.5f);
         }
     }
 }

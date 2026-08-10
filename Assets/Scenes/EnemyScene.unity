@@ -637,6 +637,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2254521384478589296, guid: fe1e1f0775b962a45a0fea8901acb2d9, type: 3}
+      propertyPath: startingShell
+      value: 
+      objectReference: {fileID: 11400000, guid: fb7d91422654ef64099c1e56f2f6a8a0, type: 2}
     - target: {fileID: 8425884272526291692, guid: fe1e1f0775b962a45a0fea8901acb2d9, type: 3}
       propertyPath: m_Name
       value: Player
