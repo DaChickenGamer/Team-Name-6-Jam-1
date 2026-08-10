@@ -38,8 +38,7 @@ public class PlayerShell : MonoBehaviour
         if (!startingShell) yield break;
 
         _currentShell = startingShell;
-        isEquipped = false; // prefab defaults to true; allow initial EquipShell to run
-        // Wait so HealthUI can build base hearts before on-equip adds more.
+        isEquipped = false;
         yield return null;
         EquipShell();
     }
@@ -142,7 +141,6 @@ public class PlayerShell : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        // Enter can be missed while isThrowing / during the pickup lockout.
         TryPickup(other);
     }
 

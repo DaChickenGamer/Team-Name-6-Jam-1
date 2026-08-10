@@ -19,9 +19,9 @@ public class PlayerHealth : MonoBehaviour
     public event Action<int> RemoveHealthEvent;
 
     
-    private void Start()
+    private void Awake()
     {
-        currentHealth = maxHealth; 
+        currentHealth = maxHealth;
     }
 
     private void Update()
@@ -38,8 +38,7 @@ public class PlayerHealth : MonoBehaviour
     }
     private void SetHealth(int newAmount)
     {
-        OnHealthChanged?.Invoke(newAmount);
-        if(newAmount > maxHealth)
+        if (newAmount > maxHealth)
             currentHealth = maxHealth;
         else if (newAmount < 0)
         {
@@ -48,6 +47,8 @@ public class PlayerHealth : MonoBehaviour
         }
         else
             currentHealth = newAmount;
+
+        OnHealthChanged?.Invoke(currentHealth);
     }
 
     private void SetMaxHealth(int newAmount)
@@ -68,15 +69,19 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void AddMaxHealth(int amount)
-    {   
-        
+    {
+        bool wasFull = currentHealth >= maxHealth;
         AddMaxHealthEvent?.Invoke(amount);
+        SetHealth(currentHealth + amount);
         SetMaxHealth(maxHealth + amount);
+        if (wasFull)
+            AddHealth(amount);
     }
 
     public void RemoveMaxHealth(int amount)
     {
         RemoveMaxHealthEvent?.Invoke(amount);
+        SetHealth(currentHealth - amount);
         SetMaxHealth(maxHealth - amount);
     }
         
